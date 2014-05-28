@@ -4,34 +4,28 @@ Preface
 
 The most up to date version of this documentation can be found in **html** and **PDF** form on `ReadTheDocs <https://readthedocs.org/projects/hlutool-developerguide/>`_.
 
-Recommended Knowledge
-=====================
-
-Developers
-----------
-It is recommended that any person planning to contribute to the development of the HLU Tool should:
-
-* Have an understanding and experience of IT systems management.
-* Understand relational database structures.
-* Be an expert user of the chosen database system.
-* Have qualifications, certified training or equivalent experience in managing databases using that system.
-* Have certified training or equivalent experience in advanced features of the relevant GIS software, including defining, joining and exporting layers and creating spatial and attribute indexes.
-
-
 What this guide covers
 ======================
 
-This Preface explains a little about the HLU Tool, the community of people who develop and use it, and the licensing conditions for using and distributing it.
+This guide explains a little about how the HLU Tool source code is structured, what you may need to develop and support it, how to build and distribute it, and how to maintain the associated online guides.
 
-:doc:`../installation/installation` details the system requirements and describes how to install the HLU Tool.
+:doc:`../requirements/requirements` summarises the applications, websites, tools, skills & experience that a developer may need.
 
-:doc:`../configuration/configuration` describes how to connect to a HLU Tool database and GIS application.
+:doc:`../components/components` outlines the major components of the tool's source code.
 
-:doc:`../access/access` provides instructions on how to link an Access front-end to a SQL Server database.
+:doc:`../source/source` introduces the basics of the GitHub version control repository where the source code is hosted.
 
-:doc:`../database/database` outlines the database structure and how to adapt the data for local requirements.
+:doc:`../coding/coding` proposes some general guidelines for coding standards, metadata and comments when making code changes.
 
-:doc:`../optimisation/optimisation` introduces tips for optimising the performance of the tool.
+:doc:`../installer/installer` summarises the features and configuration options that are used for creating an installer for the tool.
+
+:doc:`../building/building` lists the steps to follow when building the tool and distributing a new release.
+
+:doc:`../documentation/documentation` gives an overview of the associated online guides and how to maintain them. 
+
+:doc:`../issues/issues` introduces the online forum and issue tracker where issues and improvements can be discussed, proposed and tracked.
+
+:doc:`../process/process` outlines the typical development process from getting the latest source code to updating the issue tracker.
 
 
 .. index::
@@ -42,21 +36,25 @@ Copyrighting & Licensing
 
 The code for the HLU Tool is 'open source' and is released under `GPLv3 <http://www.gnu.org/licenses/gpl.html>`_. Users are free to install it on as many computers as they like, and to redistribute it according to the GPLv3 license.
 
+The GPL is designed to guarantee the user's freedom to share and change the software licensed under its terms. When using GPL code no additional restrictions may be applied to resulting product.
+
 Please remember, however, that the tool cost a lot of money to develop and still requires further development and ongoing support. Hence any contributions towards costs would be gratefully received. Enquiries can be made via the `ALERC forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_.
 
 
 .. index::
-	single: Useful Links
+	single: Quick Links
 
-Useful links
-============
+Quick links
+===========
 
-Related community links:
+The following are links to some of the websites relevant to the use, development and support of the tool:
 
-* `Users <http://forum.lrcs.org.uk/viewforum.php?id=24>`_ - Announcements, bug reports, user Q&A and feature discussions.
-* `Administrators <https://github.com/HabitatFramework/HLUTool/releases>`_ - Release notes and installers for ArcGIS and MapInfo systems.
-* `Developers <https://github.com/HabitatFramework/HLUTool>`_ - Tool source code.
-* `Issues <https://github.com/HabitatFramework/HLUTool/issues>`_ - Known issues and existing change requests.
+* `ALERC Forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_ - Announcements, bug reports, user Q&A and feature discussions.
+* `Releases <https://github.com/HabitatFramework/HLUTool/releases>`_ - Release notes and installers for ArcGIS and MapInfo systems.
+* `Source Code <https://github.com/HabitatFramework>`_ - Repositories for the source code of the tool and online guides.
+* `Issue Tracking <https://github.com/HabitatFramework/HLUTool/issues>`_ - Known issues and existing change requests.
+* `User Guide <https://readthedocs.org/projects/hlugistool-userguide/>`_ - Online guide for users.
+* `Technical Guide <https://readthedocs.org/builds/hlutool-technicalguide/>`_ - Online guide for administrators and technical users.
 
 
 .. index::
@@ -65,7 +63,7 @@ Related community links:
 Acknowledgements
 ================
 
-Many thanks are due to all the LRCs in the south-east of England and their staff who have, and continue to, fund and contribute to the HLU Tool.  It takes a small army of developers, testers and users to build a truly useful tool (especially users who care enough to test new releases, report bugs and discuss feature requests).
+Many thanks are due to all the LRCs in the south-east of England and their staff who have, and continue to, fund and support the development of the HLU Tool. It takes a small army of developers, testers and users to build a truly useful tool (especially users who care enough to test new releases, report bugs and discuss feature requests).
 
 
 Conventions used in this manual
@@ -92,5 +90,5 @@ The following typographical conventions are used in this manual:
 	Notes explain things in more detail or highlight important points.
 
 .. caution::
-	Warnings where administrators should pay attention.
+	Warnings where developers should pay attention.
 
