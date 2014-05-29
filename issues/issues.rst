@@ -11,6 +11,6 @@ ALERC Forum
 
 .. _issue_tracking:
 
-GitHub repository issue tracker
-===============================
+GitHub Issue Tracker
+====================
 

@@ -27,9 +27,20 @@ Websites
 
 The following is a list of websites that you will need to use and become familiar with when developing and supporting the HLU Tool and associated user, technical and developer's guides:
 
-	* `GitHub <https://github.com/HabitatFramework>`_ : Hosts the source code for the tool and accompanying user and technical guides (including this developer's guide), and is also used as the `issue tracker <https://github.com/HabitatFramework/HLUTool/issues>`_ for any agreed known issues and proposed change requests for the tool. See :ref:`issue_tracking` for more details.
+	* `GitHub <https://github.com/HabitatFramework>`_ : Hosts the source code for the tool and accompanying user and technical guides (including this developer's guide), and is also used as the `issue tracker <https://github.com/HabitatFramework/HLUTool/issues>`_ for any agreed known issues and proposed change requests for the tool.
+
+	.. seealso::
+		See :ref:`source_control_github` and :ref:`issue_tracking` for more details.
+
 	* `ReadTheDocs <https://readthedocs.org/>`_ : Creates and hosts the `User Guide <https://readthedocs.org/projects/hlugistool-userguide/>`_, `Technical Guide <https://readthedocs.org/builds/hlutool-technicalguide/>`_ and `Developer's Guide <https://readthedocs.org/projects/hlutool-developersguide/>`_ (this guide) for the tool. See :ref:`documentation_rtd` for more details.
+	
+	.. seealso::
+	See :ref:`documentation_rtd` for more details.
+
 	* `ALERC Forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_ : Hosts a discussion forum available to Local Record Centres (LRCs) for the HLU Tool and associated Habitat Framework.
+	
+	.. seealso::
+	See :ref:`_user_forum` for more details.
 
 
 Tools & Extensions
@@ -54,7 +65,7 @@ The following is a list of programming concepts, languages, skills & experience 
 	* Ability to write Structured Query Language (SQL).
 	* An understanding of how relational databases work and Relational Database Management Systems (RDBMS) such as `Microsoft SQL Server <http://en.wikipedia.org/wiki/Microsoft_SQL_Server>`_ and `Microsoft Access <http://office.microsoft.com/en-gb/access/>`_.
 	* Familiarity with Microsoft's .Net Framework component `LINQ (Language Integrated Query) <http://msdn.microsoft.com/en-us/library/bb397926.aspx>`_.
-	* Experience of using `ArcGIS Desktop <>`_, in particular for creating & editing data and performing basic geoprocessing functions such as split & merge.
+	* Experience of using `ArcGIS Desktop <http://www.esri.com/software/arcgis/arcgis-for-desktop>`_, in particular for creating & editing data and performing basic geoprocessing functions such as split & merge.
 	* A understanding of `ArcObjects <http://help.arcgis.com/en/sdk/10.0/arcobjects_net/ao_home.html>`_ and experience of developing with ArcObjects in .NET.
 	* Experience of using `MapInfo Professional <http://www.mapinfo.com/product/mapinfo-professional/>`_, in particular for creating & editing data.
 	* Experience of developing `MapBasic <http://www.mapinfo.com/product/mapinfo-mapbasic/>`_ programs, a BASIC-like programming language used to create custom applications for use with MapInfo.
