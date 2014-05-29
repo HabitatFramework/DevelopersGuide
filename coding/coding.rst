@@ -28,8 +28,7 @@ The following are a set of 'basic principles', based on those recommended by `Bu
 	* An easy way to check if your code is readable, is to ask yourself, 'Will another programmer understand this line instantly when they look at it? If not, that line either needs to be re-written or needs a comment.
 	 
 	 .. seealso::
-
-	 See :ref:`coding_comments` for more guidelines on applying comments.
+		See :ref:`coding_comments` for more guidelines on applying comments.
 
 
 

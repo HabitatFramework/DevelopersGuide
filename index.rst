@@ -3,8 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+HLU Tool - Developer's Guide
+============================
+
 Contents
-========
+--------
 
 .. raw:: latex
 
@@ -31,7 +34,7 @@ Contents
 .. only:: html
 
    Index
-   =====
+   -----
 
    * :ref:`genindex`
 

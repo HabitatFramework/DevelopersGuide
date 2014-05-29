@@ -11,8 +11,7 @@ Since v1.0.1 of the HLU Tool *InstallShield Limited Edition* has been used to bu
 Below is a summary of the InstallShield Limited Edition features and configuration options that are used for creating a Windows installer for the tool. There are no complex settings used to build a Windows installer for the HLU Tool. In fact, the only 'advanced' requirement when installing the ArcGIS/MapInfo variant of the tool is the need to register the *HluArcMapExtension.dll* assembly as an ArcMap Desktop extension. This is not 'directly' achieved by the installer setup.exe application, but instead is achieved 'indirectly' using an *Installer Class* assembly.
 
 .. seealso::
-
-See :doc:`../components/components` for details of the ArcObjectsInstaller component and how the ArcMap Extension is registered when building the tool assemblies in Visual Studio and installing the tool.
+	See :doc:`../components/components` for details of the ArcObjectsInstaller component and how the ArcMap Extension is registered when building the tool assemblies in Visual Studio and installing the tool.
 
 
 Organize Your Setup
@@ -77,7 +76,7 @@ Requirements
 This tab is where you can configure software conditions that must be met on a target system in order for the installation setup for the tool to run. Currently there are only two conditions set:
 
 	* **.NET 3.5 SP1 is installed** : Microsoft .NET Framework 3.5 Service Pack 1 (or later) must be installed on the target system.
-	* **REALVERSION** : A custom condition that ensures that ArcGIS 10.1 or later is installed on the target system by checking the existence of a 'RealVersion' registry value under the registry key 'SOFTWARE\ESRI\ArcGIS' in the 'HKLM' registry root. This is a custom condition that was created using the *System Search Wizard*.
+	* **REALVERSION** : A custom condition that ensures that ArcGIS 10.1 or later is installed on the target system by checking the existence of a 'RealVersion' registry value under the registry key 'SOFTWARE\\ESRI\\ArcGIS' in the 'HKLM' registry root. This is a custom condition that was created using the *System Search Wizard*.
 
 .. note::
 	This custom condition is only included in the ArcGIS/MapInfo variant of the tool as a simple mechanism to ensure it is not installed on a MapInfo only target system in error.
