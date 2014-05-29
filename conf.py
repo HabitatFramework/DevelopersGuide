@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'HLUGISTool Developer's Guide
+project = u'HLUGISTool Developer\'s Guide'
 copyright = u'2014, Andy Foy'
 
 # The version info for the project you're documenting, acts as replacement for
