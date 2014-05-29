@@ -40,7 +40,7 @@ The following is a list of websites that you will need to use and become familia
 	* `ALERC Forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_ : Hosts a discussion forum available to Local Record Centres (LRCs) for the HLU Tool and associated Habitat Framework.
 	
 	.. seealso::
-		See :ref:`_user_forum` for more details.
+		See :ref:`user_forum` for more details.
 
 
 Tools & Extensions

@@ -12,7 +12,7 @@ Typical Development Process
 	3. Create source code branch
 	4. Change source code
 	5. Add comments to the source code to describe each new/amended assembly, class, method, property and section of code
-	6. Add 'FIXED:', 'CHANGED:'' or 'FIX:' comments to the source code where appropriate
+	6. Add 'FIXED:', 'CHANGED:'' or 'FIX:' Task List comments to the source code where appropriate
 	7. Update source code Copyright statement (if applicable)
 	8. Update AboutHLUTool Copyright statement (if applicable)
 	9. Test and debug changes
