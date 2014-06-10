@@ -1,10 +1,16 @@
-
 ************
 Requirements
 ************
 
-Software developers will come from different backgrounds, have different skills and experience and may use different development environments and tools. Whilst one developer may prefer to have formal training and extensive experience in one particular programming language or concept before tackling a task, another developer may be comfortable to use their experience in other languages or platforms to pick things up as they go. Hence it is not possible to come up with a definitive list of all the skills, experience and tools that a developer **must** have or use in order to undertake development and support of the HLU Tool. Therefore the following is just a guide to the applications, websites and tools that a developer may use and the skills & experience that a developer **may** need.
+Software developers will come from different backgrounds, have different skills and experience and may use different development environments and tools. Whilst one developer may prefer to have formal training and extensive experience in a particular programming language or concept before tackling a task, another may be comfortable to use their experience in other languages or platforms to pick things up as they go.
 
+As a result, it is not possible to come up with a definitive list of all the skills, experience and tools that a developer **must** have or use in order to undertake development and support of the HLU Tool. Therefore the following is just a guide to the applications, websites and tools that a developer **may** wish to use and the skills & experience that a developer **may** need.
+
+
+.. index::
+	single: Requirements; Applications
+
+.. _requirements_applications:
 
 Applications
 ============
@@ -21,6 +27,15 @@ The following is a list of applications that you are likely to need as a minimum
 	* GitHub for Windows
 	* InstallShield Limited Edition
 
+
+.. raw:: latex
+
+	\newpage
+
+.. index::
+	single: Requirements; Websites
+
+.. _requirements_websites:
 
 Websites
 ========
@@ -43,6 +58,15 @@ The following is a list of websites that you will need to use and become familia
 		See :ref:`user_forum` for more details.
 
 
+.. raw:: latex
+
+	\newpage
+
+.. index::
+	single: Requirements; Tools & Extensions
+
+.. _requirements_tools:
+
 Tools & Extensions
 ==================
 
@@ -53,6 +77,11 @@ The following is a list of free tools and extensions that may be useful when dev
 	* `Notepad 2-mod <http://xhmikosr.github.io/notepad2-mod/>`_ : A fast and light-weight Notepad-like text editor with syntax highlighting.
 	* `Sublime Text 3 <http://www.sublimetext.com/3>`_ : The latest version of the sophisticated text editor for code and markup languages.
 
+
+.. index::
+	single: Requirements; Skills
+
+.. _requirements_skills:
 
 Developer Skills
 ================
@@ -72,6 +101,6 @@ The following is a list of programming concepts, languages, skills & experience 
 	* A General understanding of `XML <http://en.wikipedia.org/wiki/XML>`_ and `XAML <http://msdn.microsoft.com/en-us/library/ms752059(v=vs.90).aspx>`_ used to write Windows Presentation Foundation (WPF) applications. WPF is used for the tool's user interface.
 	* Understanding of source code version control system concepts and features, particularly `Git <http://git-scm.com/>`_ and `GitHub <https://github.com/>`_.
 	* Familiarity with `GitHub Flavoured MarkDown <https://help.github.com/articles/github-flavored-markdown>`_ text syntax used for GitHub ReadMe files, issues and comments.
-	* Ability to read/write `reStructuredText markup syntax <http://docutils.sourceforge.net/rst.html>`_ used by the user, technical and developer's guides.
+	* Ability to read/write `reStructuredText markup syntax <http://docutils.sourceforge.net/rst.html>`_ used to create the user, technical and developer's guides.
 	* How online documentation repositories such as `ReadTheDocs <https://readthedocs.org/>`_ work.
 

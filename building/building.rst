@@ -1,4 +1,3 @@
-
 ********
 Building
 ********
@@ -12,23 +11,68 @@ Building
 Building the Tool
 =================
 
-1. Amend the HLUGISTool assembly version (appears in 'About' popup in user interface).
-2. Amend the installer version
-3. Amend the installer product key (and note in 'HLU Releases.txt')
-4. Amend the installer Upgrade Paths 'Max Version' to the previous version number
-5. Amend readme.txt, readme.rtf and readme.md
-6. Create release notes - update version, release date, additions, changes, fixes, etc.
+When building the tool for a new version/release, rather than for just testing or debugging changes in progress, there are a number of steps to follow or dependencies to consider.
 
+
+.. index::
+	single: Building; Version Numbers
+
+.. _building_version_numbers:
 
 Version Numbers
 ---------------
 
+The HLUGISTool assembly version, using the format *Major.Minor.Patch.Build*, should be incremented following `semantic versioning <http://semver.org/>`_ rules. So whether the increment relates to a major change, minor update or just a patch will depend on what is contained in the new release.
+
+	* Major version numbers change whenever there is significant change to the look or functionality or for large or potentially backward-incompatible changes.
+	* Minor version numbers change when a new minor feature is introduced, or when a set of smaller features are rolled out together.
+	* Patch numbers change when a new build of the software is released containing small bug fixes.
+	* Build numbers typically don't change as a new version is not typically released just for a new release.
+
+.. note::
+	The assembly version number appears in the 'About' pop-up window on user interface.
+
+The **Product Version** in the installer project properties should also be changed to match the assembly version number.
+
+.. note::
+	The installer product version number is used when installing the tool to ensure an older version of the tool doesn't overwrite a later version. The version number also appears in the Control Panel *Programs and Features* list.
+
+
+.. index::
+	single: Building; Product Code
+
+.. _building_product_code:
+
 Product Code
 ------------
 
-Upgrade Path
+The installer **Product Code** should be changed to uniquely identify this version if the product. The Windows installer uses the product code at run time to determine whether the same version of the product has already been installed.
+
+.. note::
+	To create a new GUID that uniquely identifies a new version of the product or click the `Generate a new GUID button` ({...}) in the Product Code setting in the General Information tab of the InstallShield project. See :
+
+A note of all previously used Product Codes is maintained in 'Releases and Product Codes.txt' in the source code.
+
+
+.. index::
+	single: Building; Upgrade From
+
+.. _building_upgrade_from:
+
+Upgrade From
 ------------
 
+The installer `Upgrade From` **Max Version** must reflect the version number of the most recent release so that the Windows installer will find and upgrade **all** previous of the tool.
+
+
+ReadMe files
+------------
+
+The ReadMe file must be amended to reflect the version number and copyright details of the new release, as well as any new features or changes to system requirements. The ReadMe file is maintained in three different formats; simple text (.txt), rich text (.rtf) and markdown (.md). Each format is used in different circumstances:
+
+	* ReadMe.txt - installed with the tool.
+	* ReadMe.rtf - displayed during the installation process.
+	* ReadMe.md  - displayed in the source code repository by GitHub .
 
 
 .. raw:: latex
@@ -43,27 +87,85 @@ Upgrade Path
 Distributing a new Release
 ==========================
 
-1. Create new tags for releases
-2. Push tags to GitHub
-3. Add release notes to new tags
-4. Attach setup.exe installer to release and publish the release
+There are a number of stages involved in distributing a new release of the tool.
 
+.. index::
+	single: Releasing; Tags
+
+.. _releasing_tags:
 
 GitHub Tags
 -----------
 
-Tag descriptions
+Once the final commit has been applied for the new version then new tags should be created in the local Git repository for each branch/variant of the tool. It is common practice to use tag names by prefixing the version number with the letter `v`. For the tool tag descriptions also follow a set pattern by explicitly stating if it is a major, minor or patch release.
 
-1. Minor release v1.0.3.0
-2. Minor release v1.0.3.0 for MapInfo only
+**ArcGIS/MapInfo variant**
+Name: version number prefixed by 'v' (e.g. 'v1.0.8.0')
+Description: Major/Minor/Patch release version number (e.g. `Minor release v1.0.8.0`)
+
+	.. note::
+		To create the above tag example enter the following in a Git shell whilst the master branch is active::
+
+			**git tag -a v1.0.8 -m ‘version 1.0.8’**
+
+**MapInfo variant**
+Name: version number prefixed by 'v' and suffixed by 'm' (e.g. 'v1.0.8.0m')
+Description: Major/Minor/Patch release version number for MapInfo only (e.g. `Minor release v1.0.8.0 for MapInfo only`)
+
+	.. note::
+		To create the above tag example enter the following in a Git shell window whilst the master-mapinfo branch is active::
+
+			**git tag -a v1.0.8m -m ‘version 1.0.8 for Mapinfo only’**
+
+
+Once the tags have been created in the local repository they should be pushed to the remote GitHub repository.
+
+	.. note::
+		To push new tags to GitHub enter the following in a Git shell window::
+
+			**git push --tags**
+
+
+.. tip::
+	Existing tags for the tool can be viewed on GitHub under `tags <https://github.com/HabitatFramework/HLUTool/tags>`_.
+
+
+.. index::
+	single: Releasing; Release Notes
+
+.. _releasing_release_notes:
 
 Release Notes
 -------------
 
+Each new version/variant of the tool should be accompanied by its own set of release notes. Release notes are written using `GitHub Flavored Markdown <https://help.github.com/articles/github-flavored-markdown>`_ and should contain the following information as a minimum:
+
+	* Version
+	* Release date
+	* System requirements
+	* Additions
+	* Removals
+	* Changes
+	* Fixes
+
+
+Once the new tags for each branch/variant have been pushed to the GitHub repository then release notes can be added. To add release notes go to the list of `tags <https://github.com/HabitatFramework/HLUTool/tags>`_ and click **Add release notes** against the required tag.
+
+
+.. tip::
+	Existing release for the tool can be viewed on GitHub under `releases <https://github.com/HabitatFramework/HLUTool/releases>`_.
+
+
+.. index::
+	single: Releasing; Executables
+
+.. _releasing_executables:
+
 Upload Executables
 ------------------
 
-ReadMe Files
-------------
+Finally, once each new release has been created on GitHub the associated installer setup.exe executable can be uploaded. This provides an effective way of distributing the tool and ensures that the installer is stored alongside the relevant release notes and source code for each version/variant.
 
+.. note::
+	To attach the setup.exe installer to the release edit the release on GitHub and then drag and drop the file on the `Attach binaries by dropping them here` area.
 
