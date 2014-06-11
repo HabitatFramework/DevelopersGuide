@@ -14,7 +14,7 @@ Starting with ArcGIS version 10, however, ESRI has moved away from the COM compo
 COM components must also be registered in the ESRI component categories appropriate to their intended context and function in order for the ArcGIS applications to make use of their functionality. For example, all ArcMap extensions must be registered in the ESRI **MxExtensions** component category.
 
 
-Registration during build
+Registration During Build
 =========================
 
 Specifying the 'Register for COM Interop' option on an assembly will trigger Visual Studio to execute **RegAsm.exe** with the */codebase* argument during the *Build* and *Clean* processes to register/unregister the assembly as a COM component in the registry of the development machine. Whenever a component is being registered or unregistered for use from COM, two attribute classes within the .NET Framework, **ComRegisterFunctionAttribute** and **ComUnregisterFunctionAttribute**, allow you to specify user-defined methods that will be called automatically.
@@ -81,7 +81,11 @@ In order to trigger the ESRIRegAsm.exe utility (for ArcGIS 10 onwards) custom ca
 These custom calls execute the ESRIRegAsm utility using command line argument '/p' to specify the ArcGIS 'Desktop' product. Because the '/s' argument is not supplied a dialog box will appear indicating if the registration/unregistration is successful or not.
 
 
-Registration during installation
+.. raw:: latex
+
+	\newpage
+
+Registration During Installation
 ================================
 
 During the installation of the HLU Tool the HluArcMapExtension assembly must also be registered using the ESRIRegAsm utility and in the *MxExtensions* component category on the target machine. Because the Visual Studio *Build* process is not run registration is achieved in a different way than as described above.

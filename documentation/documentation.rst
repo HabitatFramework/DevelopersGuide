@@ -1,16 +1,13 @@
+.. index::
+	single: Documentation
+
+.. _documentation:
+
 *************
 Documentation
 *************
 
-.. index::
-	single: Documentation
-
-.. _documentation_overview:
-
-Overview
-========
-
-There are three distinct guides that accompany the HLU Tool:
+There are three distinct guides that accompany the HLU Tool. All the guides are written using reStructuredText, their sources are stored on GitHub and they are available to view and download on ReadTheDocs.
 
 **User Guide**
 
@@ -40,7 +37,7 @@ reStructuredText
 What is it?
 -----------
 
-The guides are written using reStructuredText which is is an easy-to-read, what-you-see-is-what-you-get plain text markup syntax. It is often used for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents (such as the HLU Tool guides).
+reStructuredText is is an easy-to-read, what-you-see-is-what-you-get plain text markup syntax. It is often used for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents (such as the HLU Tool guides).
 
 reStructuredText can be written in any text editor, but some editors provide syntax highlighting and shortcuts to assist authors (see :ref:`requirements_tools` for some examples).
 
@@ -52,6 +49,10 @@ For those unfamiliar with reStructuredText the following websites will provide s
 	* `Sphinx reStructuredText <http://sphinx-doc.org/rest.html>`_ - an introduction to reStructuredText concepts and syntax.
 	* `Docutils <http://docutils.sourceforge.net/rst.html>`_ - a reference guide for reStructuredText markup syntax.
 
+
+.. raw:: latex
+
+	\newpage
 
 .. index::
 	single: Documentation; GitHub
@@ -108,7 +109,7 @@ When each ReadTheDocs project (each guide is a separate project) is built it aut
 Versions
 --------
 
-ReadTheDocs supports multiple versions for each project, so for each release of the tool it can host a parallel release of each of the guides. To do this each guide would need to be updated (where appropriate) and then 'tagged' in GitHub (see :ref:`source_control_github`). ReadTheDocs will then build HTML and PDF formats of the guide for the new version and continue to host this latest version together with all previous versions.
+ReadTheDocs supports multiple versions for each project, so for each release of the tool it can host a parallel release of each of the guides. To do this each guide would need to be updated (where appropriate) and then 'tagged' in GitHub (see :ref:`GitHub Source Control <source_control_github>`). ReadTheDocs will then build HTML and PDF formats of the guide for the new version and continue to host this latest version together with all previous versions.
 
 	.. tip::
 		Which versions are available to users on ReadTheDocs can be configured on the `Versions` page in the `Admin` section for each project (guide).

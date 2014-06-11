@@ -31,8 +31,8 @@ This guide explains a little about how the HLU Tool source code is structured, w
 .. index::
 	single: Licensing
 
-Copyrighting & Licensing
-========================
+Open Source Licensing
+=====================
 
 The code for the HLU Tool is 'open source' and is released under `GPLv3 <http://www.gnu.org/licenses/gpl.html>`_. Users are free to install it on as many computers as they like, and to redistribute it according to the GPLv3 license.
 

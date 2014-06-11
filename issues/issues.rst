@@ -1,6 +1,6 @@
-**************
-Issue Tracking
-**************
+*************
+Issue Logging
+*************
 
 .. _user_forum:
 

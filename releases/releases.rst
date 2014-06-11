@@ -1,12 +1,9 @@
-********
-Releases
-********
+************
+New Releases
+************
 
 
-.. index::
-	single: Building
-
-.. _building:
+.. _new_releases:
 
 Building the Tool
 =================
@@ -15,14 +12,15 @@ When building the tool for a new version/release, rather than for just testing o
 
 
 .. index::
-	single: Building; Version Numbers
+	single: New Releases; Version Numbers
 
 .. _building_version_numbers:
 
 Version Numbers
 ---------------
 
-**Assembly version**
+Assembly version
+++++++++++++++++
 
 The HLUGISTool assembly version, using the format *Major.Minor.Patch.Build*, should be incremented following `semantic versioning <http://semver.org/>`_ rules. So whether the increment relates to a major change, minor update or just a patch will depend on what is contained in the new release.
 
@@ -34,7 +32,8 @@ The HLUGISTool assembly version, using the format *Major.Minor.Patch.Build*, sho
 .. note::
 	The assembly version number appears in the 'About' pop-up window on user interface.
 
-**Product version**
+Product version
++++++++++++++++
 
 The product version in the installer project properties should also be changed to match the assembly version number.
 
@@ -43,7 +42,7 @@ The product version in the installer project properties should also be changed t
 
 
 .. index::
-	single: Building; Product Code
+	single: New Releases; Product Code
 
 .. _building_product_code:
 
@@ -59,18 +58,18 @@ A note of all previously used Product Codes is maintained in 'Releases and Produ
 
 
 .. index::
-	single: Building; Upgrade From
+	single: New Releases; Upgrading
 
 .. _building_upgrade_from:
 
-Upgrade From
-------------
+Upgrading
+---------
 
 The installer `Upgrade From` **Max Version** must reflect the version number of the most recent release so that the Windows installer will find and upgrade **all** previous of the tool.
 
 
 .. index::
-	single: Building; ReadMe Files
+	single: New Releases; ReadMe Files
 
 .. _building_readme_files:
 
@@ -93,13 +92,13 @@ The ReadMe file must be amended to reflect the version number and copyright deta
 
 .. _releasing:
 
-Distributing a New Release
-==========================
+Distributing the Release
+========================
 
-There are a number of stages involved in distributing a new release of the tool.
+The tool is currently distributed via GitHub. There are a number of stages involved in distributing a new release of the tool.
 
 .. index::
-	single: Releasing; Tags
+	single: New Releases; Tags
 
 .. _releasing_tags:
 
@@ -140,7 +139,7 @@ Once the tags have been created in the local repository they should be pushed to
 
 
 .. index::
-	single: Releasing; Release Notes
+	single: New Releases; Release Notes
 
 .. _releasing_release_notes:
 
@@ -166,7 +165,7 @@ Once the new tags for each branch/variant have been pushed to the GitHub reposit
 
 
 .. index::
-	single: Releasing; Executables
+	single: New Releases; Executables
 
 .. _releasing_executables:
 

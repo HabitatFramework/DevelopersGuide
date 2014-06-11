@@ -8,6 +8,37 @@ As a result, it is not possible to come up with a definitive list of all the ski
 
 
 .. index::
+	single: Requirements; Skills
+
+.. _requirements_skills:
+
+Developer Skills
+================
+
+The following is a list of programming concepts, languages, skills & experience that developers **may** need before attempting to develop or support the HLU Tool and associated guides.
+
+	* An understanding and experience of general software development concepts such as design, coding, testing, debugging, issue management and deployment.
+	* Experience of programming and debugging applications with Microsoft's `Visual Studio <http://www.visualstudio.com/>`_.
+	* Experience in C#, .NET and object-oriented programming concepts.
+	* Ability to write Structured Query Language (SQL).
+	* An understanding of how relational databases work and Relational Database Management Systems (RDBMS) such as `Microsoft SQL Server <http://en.wikipedia.org/wiki/Microsoft_SQL_Server>`_ and `Microsoft Access <http://office.microsoft.com/en-gb/access/>`_.
+	* Familiarity with Microsoft's .Net Framework component `LINQ (Language Integrated Query) <http://msdn.microsoft.com/en-us/library/bb397926.aspx>`_.
+	* Experience of using `ArcGIS Desktop <http://www.esri.com/software/arcgis/arcgis-for-desktop>`_, in particular for creating & editing data and performing basic geoprocessing functions such as split & merge.
+	* A understanding of `ArcObjects <http://help.arcgis.com/en/sdk/10.0/arcobjects_net/ao_home.html>`_ and experience of developing with ArcObjects in .NET.
+	* Experience of using `MapInfo Professional <http://www.mapinfo.com/product/mapinfo-professional/>`_, in particular for creating & editing data.
+	* Experience of developing `MapBasic <http://www.mapinfo.com/product/mapinfo-mapbasic/>`_ programs, a BASIC-like programming language used to create custom applications for use with MapInfo.
+	* A General understanding of `XML <http://en.wikipedia.org/wiki/XML>`_ and `XAML <http://msdn.microsoft.com/en-us/library/ms752059(v=vs.90).aspx>`_ used to write Windows Presentation Foundation (WPF) applications. WPF is used for the tool's user interface.
+	* Understanding of source code version control system concepts and features, particularly `Git <http://git-scm.com/>`_ and `GitHub <https://github.com/>`_.
+	* Familiarity with `GitHub Flavoured MarkDown <https://help.github.com/articles/github-flavored-markdown>`_ text syntax used for GitHub ReadMe files, issues and comments.
+	* Ability to read/write `reStructuredText markup syntax <http://docutils.sourceforge.net/rst.html>`_ used to create the user, technical and developer's guides.
+	* How online documentation repositories such as `ReadTheDocs <https://readthedocs.org/>`_ work.
+
+
+.. raw:: latex
+
+	\newpage
+
+.. index::
 	single: Requirements; Applications
 
 .. _requirements_applications:
@@ -27,10 +58,6 @@ The following is a list of applications that you are likely to need as a minimum
 	* GitHub for Windows
 	* InstallShield Limited Edition
 
-
-.. raw:: latex
-
-	\newpage
 
 .. index::
 	single: Requirements; Websites
@@ -58,10 +85,6 @@ The following are websites that you will need to use and become familiar with wh
 	See :ref:`user_forum` for more details.
 
 
-.. raw:: latex
-
-	\newpage
-
 .. index::
 	single: Requirements; Tools & Extensions
 
@@ -83,31 +106,4 @@ The following is a list of free tools and extensions that may be useful when dev
 
 `Sublime Text 3 <http://www.sublimetext.com/3>`_
 	The latest version of the sophisticated text editor for code and markup languages.
-
-
-.. index::
-	single: Requirements; Skills
-
-.. _requirements_skills:
-
-Developer Skills
-================
-
-The following is a list of programming concepts, languages, skills & experience that developers **may** need before attempting to develop or support the HLU Tool and associated guides.
-
-	* An understanding and experience of general software development concepts such as design, coding, testing, debugging, issue management and deployment.
-	* Experience of programming and debugging applications with Microsoft's `Visual Studio <http://www.visualstudio.com/>`_.
-	* Experience in C#, .NET and object-oriented programming concepts.
-	* Ability to write Structured Query Language (SQL).
-	* An understanding of how relational databases work and Relational Database Management Systems (RDBMS) such as `Microsoft SQL Server <http://en.wikipedia.org/wiki/Microsoft_SQL_Server>`_ and `Microsoft Access <http://office.microsoft.com/en-gb/access/>`_.
-	* Familiarity with Microsoft's .Net Framework component `LINQ (Language Integrated Query) <http://msdn.microsoft.com/en-us/library/bb397926.aspx>`_.
-	* Experience of using `ArcGIS Desktop <http://www.esri.com/software/arcgis/arcgis-for-desktop>`_, in particular for creating & editing data and performing basic geoprocessing functions such as split & merge.
-	* A understanding of `ArcObjects <http://help.arcgis.com/en/sdk/10.0/arcobjects_net/ao_home.html>`_ and experience of developing with ArcObjects in .NET.
-	* Experience of using `MapInfo Professional <http://www.mapinfo.com/product/mapinfo-professional/>`_, in particular for creating & editing data.
-	* Experience of developing `MapBasic <http://www.mapinfo.com/product/mapinfo-mapbasic/>`_ programs, a BASIC-like programming language used to create custom applications for use with MapInfo.
-	* A General understanding of `XML <http://en.wikipedia.org/wiki/XML>`_ and `XAML <http://msdn.microsoft.com/en-us/library/ms752059(v=vs.90).aspx>`_ used to write Windows Presentation Foundation (WPF) applications. WPF is used for the tool's user interface.
-	* Understanding of source code version control system concepts and features, particularly `Git <http://git-scm.com/>`_ and `GitHub <https://github.com/>`_.
-	* Familiarity with `GitHub Flavoured MarkDown <https://help.github.com/articles/github-flavored-markdown>`_ text syntax used for GitHub ReadMe files, issues and comments.
-	* Ability to read/write `reStructuredText markup syntax <http://docutils.sourceforge.net/rst.html>`_ used to create the user, technical and developer's guides.
-	* How online documentation repositories such as `ReadTheDocs <https://readthedocs.org/>`_ work.
 

@@ -1,14 +1,11 @@
-*****************
-Windows Installer
-*****************
-
 .. index::
-	single: Installer
+	single: Windows Installer
 
 .. _installer:
 
-InstallShield
-=============
+*****************
+Windows Installer
+*****************
 
 Since v1.0.1 of the HLU Tool **InstallShield Limited Edition** has been used to build the Windows Installer for deploying the tool on other systems. InstallShield Limited Edition is a free version of *Flexera’s InstallShield* included within Visual Studio 2010 (and later) that replaces the functionality previously provided by the Visual Studio Installer Setup Projects. It contains a wide range of features and options for configuring how a Windows application will be installed, many of which are not needed for installing the tool.
 
@@ -23,29 +20,34 @@ Below is a summary of the InstallShield Limited Edition features and configurati
 
 
 Organize Your Setup
--------------------
+===================
 
-**General Information**
+General Information
+-------------------
 
 This tab contains general information about the tool that appears when viewing the properties of the tool once installed and when viewing the list of installed programs in the control panel.  More importantly it also contains the product version, product code and upgrade code and the destination installation path.
 
 .. seealso::
 		See :ref:`building_version_numbers` and :ref:`building_product_code` for more details.
 
-**Upgrade Paths**
+
+Upgrade Paths
+-------------
 
 This tab allows the developer to control which previously installed versions of the tool can be upgraded using this version of the tool. During installation the Windows Installer searches the target system for the specified upgrade code. If found, and the other upgrade properties are met, the target system is upgraded by installing the new version. If the upgrade code is not found on the target system then this version of the tool will be installed as new.
 
 .. seealso::
 		See :ref:`building_upgrade_from` for more details.
 
+
 The **ISPreventDowngrade** has also been enabled to prevent the current version of the tool from overwriting later (future) versions of the tool. If users want to install an older version of the tool once a newer version has been installed then the newer version will first need to be manually uninstalled.
 
 
 Specify Application Data
-------------------------
+========================
 
-**Files**
+Files
+-----
 
 This tab is used to specify which files are to be included in the install which folders they will be copied to the target system. The files specified include:
 
@@ -58,9 +60,10 @@ This tab is used to specify which files are to be included in the install which 
 
 
 Configure the Target System
----------------------------
+===========================
 
-**Shortcuts/Folders**
+Shortcuts/Folders
+-----------------
 
 This tab offers a method of designing shortcuts and program folders for the tool. Currently only two shortcuts are created on the target system's Programs menu:
 
@@ -72,17 +75,19 @@ This tab offers a method of designing shortcuts and program folders for the tool
 
 
 Customize the Setup Appearance
-------------------------------
+==============================
 
-**Dialogs**
+Dialogs
+-------
 
 This tab allows the dialog pages of the tool's setup steps to be customised. Developer's can configure various features such as which setup dialogs appear, what images and options appear on the dialogs and if the tool is automatically launched after installation.
 
 
 Define Setup Requirements and Actions
--------------------------------------
+=====================================
 
-**Requirements**
+Requirements
+------------
 
 This tab is where you can configure software conditions that must be met on a target system in order for the installation setup for the tool to run. Currently there are only two conditions set:
 

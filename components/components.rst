@@ -12,8 +12,8 @@ The following sections contain a brief description of each of the projects and t
 
 .. _assemblies:
 
-Assembly Projects
-=================
+Visual Studio Projects
+======================
 
 .. index::
 	single: Assemblies; HLUGISTool
@@ -126,23 +126,20 @@ This assembly contains a custom *Installer class* that is included within the in
 	This assembly is only used in the combined ArcGIS/MapInfo variant of the tool.
 
 
-.. raw:: latex
-
-	\newpage
-
 .. index::
 	single: Components; Installer
 
 .. _installer_project:
-
-Installer Project
-=================
 
 HluSetup_ISLE
 -------------
 
 This project is an InstallShield Limited Edition installation project that creates a Windows Installer for the tool. The various elements of the installer can be defined using the various views in InstallShield's user interface. See :ref:`installer` for more details.
 
+
+.. raw:: latex
+
+	\newpage
 
 Other Information
 =================
