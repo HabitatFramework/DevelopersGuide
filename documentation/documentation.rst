@@ -46,8 +46,8 @@ Further reading
 
 For those unfamiliar with reStructuredText the following websites will provide some useful background reading material and references to help in authoring documents:
 
-	* `reStructuredText markup syntax <http://docutils.sourceforge.net/rst.html>`_
-	* `Docutils <http://docutils.sourceforge.net/rst.html>`_
+	* `Sphinx reStructuredText <http://sphinx-doc.org/rest.html>`_ - an introduction to reStructuredText concepts and syntax.
+	* `Docutils <http://docutils.sourceforge.net/rst.html>`_ - a reference guide for reStructuredText markup syntax.
 
 
 .. index::
@@ -61,13 +61,13 @@ GitHub
 Source Control
 --------------
 
-The source code for the documentation is stored on GitHub with each guide in a separate repository. Source control for the guides works in the same way as for the tool itself using Git and GitHub for Windows (see :ref:`source_control_github`).
+The source code for the documentation is stored on GitHub with each guide in a separate repository. Source control for the guides works in the same way as for the tool itself using Git and GitHub for Windows (see :ref:`source_control_github <GitHub Source Control>`).
 
 	.. tip::
 		See `HabitatFramework <https://github.com/HabitatFramework>`_ for a list of *all* the repositories on GitHub relating to the tool.
 
 
-One of the benefits of reStructuredText is that documents written using it are readable in their 'raw' markup format. So the source code files for the guides can be viewed and downloaded directly using GitHub. However, the intended purpose of the markup is the conversion of reStructuredText documents into more structured data formats; that's where ReadTheDocs comes in (see :ref:`documentation_rtd`).
+One of the benefits of reStructuredText is that documents written using it are readable in their 'raw' markup format. So the source code files for the guides can be viewed and downloaded directly using GitHub. However, the intended purpose of the markup is the conversion of reStructuredText documents into more structured data formats; that's where ReadTheDocs comes in (see :ref:`documentation_rtd` below).
 
 Webhooks
 --------

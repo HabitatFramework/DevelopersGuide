@@ -70,7 +70,7 @@ Pull requests are especially useful in the fork & pull model because they provid
 
 .. _source_control_links:
 
-Helpful links
+Helpful Links
 =============
 
 For those unfamiliar with Git and GitHub the following links will provide some useful reading material to help explain what Git is and how to use GitHub.

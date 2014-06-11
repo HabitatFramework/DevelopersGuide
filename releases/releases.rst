@@ -22,7 +22,8 @@ When building the tool for a new version/release, rather than for just testing o
 Version Numbers
 ---------------
 
-Assembly version
+**Assembly version**
+
 	The HLUGISTool assembly version, using the format *Major.Minor.Patch.Build*, should be incremented following `semantic versioning <http://semver.org/>`_ rules. So whether the increment relates to a major change, minor update or just a patch will depend on what is contained in the new release.
 
 	* Major version numbers change whenever there is significant change to the look or functionality or for large or potentially backward-incompatible changes.
@@ -33,7 +34,7 @@ Assembly version
 	.. note::
 		The assembly version number appears in the 'About' pop-up window on user interface.
 
-Product Version
+Product version
 	The product version in the installer project properties should also be changed to match the assembly version number.
 
 	.. note::
@@ -78,7 +79,7 @@ ReadMe files
 The ReadMe file must be amended to reflect the version number and copyright details of the new release, as well as any new features or changes to system requirements. The ReadMe file is maintained in three different formats; simple text (.txt), rich text (.rtf) and markdown (.md). Each format is used in different circumstances:
 
 	ReadMe.txt
-		Installed with the tool.
+		Installed with the tool on the target system.
 
 	ReadMe.rtf
 		Displayed during the installation process.
@@ -96,7 +97,7 @@ The ReadMe file must be amended to reflect the version number and copyright deta
 
 .. _releasing:
 
-Distributing a new Release
+Distributing a New Release
 ==========================
 
 There are a number of stages involved in distributing a new release of the tool.

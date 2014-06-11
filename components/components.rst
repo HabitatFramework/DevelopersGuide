@@ -101,7 +101,7 @@ This assembly contains all the .NET Named Pipes classes used by the HLU Tool. It
 
 Outlined below are the main responsibilities of the classes present in the assembly:
 
-	* **NamedPipeNative**This utility class exposes kernel32.dll methods for Named Pipes communication. It also defines constants for some of the error codes and method parameter values.
+	* **NamedPipeNative** : This utility class exposes kernel32.dll methods for Named Pipes communication. It also defines constants for some of the error codes and method parameter values.
 	* **NamedPipeWrapper** : This class is a wrapper around NamedPipesNative. It uses the exposed kernel32.dll methods to provide controlled Named Pipes functionality.
 	* **APipeConnection** : An abstract class, which defines the methods for creating Named Pipes connections, reading and writing data. This class is inherited by the ClientPipeConnection and ServerPipeConnection classes, used by client and server applications respectively.
 	* **ClientPipeConnection** : Used by client applications to communicate with server ones by using Named Pipes.
