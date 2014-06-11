@@ -19,7 +19,7 @@ Contents
    source/source
    coding/coding
    installer/installer
-   building/building
+   releases/releases
    registration/registration
    documentation/documentation
    issues/issues

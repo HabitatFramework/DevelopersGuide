@@ -19,7 +19,7 @@ This guide explains a little about how the HLU Tool source code is structured, w
 
 :doc:`../installer/installer` summarises the features and configuration options that are used for creating an installer for the tool.
 
-:doc:`../building/building` lists the steps to follow when building the tool and distributing a new release.
+:doc:`../releases/releases` lists the steps to follow when building the tool and distributing a new release.
 
 :doc:`../registration/registration` describes how and why the tool is registered as an ArcGIS extension.
 

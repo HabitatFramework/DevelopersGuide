@@ -13,9 +13,9 @@ The `ALERC forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_ is available f
 	* If they want to recommend any new changes or enhancements to the tool.
 	* If have any general queries relating to the use or functionality of the tool.
 
-Posting new issues and proposed enhancements to the tool on the forum allows all users to consider and discuss the proposal. Once a consensus has been reached on a change or solution to an issue it can be added to the HLUTool issues log on GitHub (see :ref:`issue_tracking`). It can then be prioritised and scheduled to be addressed when time and funding allows.
+Posting new issues and proposed enhancements to the tool on the forum allows all users to consider and discuss the proposal. Once a consensus has been reached on a change or solution to an issue it can be added to the HLUTool issues log on GitHub (see :ref:`issue_tracking` for more details). It can then be prioritised and scheduled to be addressed when time and funding allows.
 
-The ALERC forum is **not** intended for use during any scheduled development or maintenance phases. This is because planned changes or fixes are easier to find and track using GitHub (see :ref:`issue_tracking`).
+The ALERC forum is **not** intended for use during any scheduled development or maintenance phases. This is because planned changes or fixes are easier to find and track using GitHub.
 
 
 .. _issue_tracking:

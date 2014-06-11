@@ -3,12 +3,12 @@ Registration
 ************
 
 .. index::
-	single: ESRI Registration
+	single: ArcGIS Registration
 
 .. _esri_registration:
 
-ArcGIS Extension
-================
+ArcGIS Registration
+===================
 
 Prior to ArcGIS version 10, Component Object Model (COM) components must be registered with the system before they can be used by ArcGIS. This was typically accomplished using Microsoft's supplied utility **RegAsm.exe**. However, starting with ArcGIS version 10 ESRI has moved away from the COM component category approach and there is now a new ESRI registration utility **ESRIRegAsm.exe** which works independently of the system registry; registration of component information for an assembly is now achieved using this new utility.
 

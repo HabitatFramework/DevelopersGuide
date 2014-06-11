@@ -25,38 +25,32 @@ HLUGISTool
 
 This is the main assembly that contains all of the user interfaces, the 'business logic' and also handles the data connection with the chosen relational database. There are a few ad-hoc classes in the parent folder but the majority of the source code is structured in the following sub-folders.
 
-**Converters**
+Converters
+	There are four converter classes in this folder that are used by the user interfaces and related classes to convert data values to/from more user-friendly visible values.
 
-There are four converter classes in this folder that are used by the user interfaces and related classes to convert data values to/from more user-friendly visible values.
+Data
+	There are a number of data classes in this folder that support connections between the tool and different relational database systems, including ODBC, Oracle, PostGres, SQL Server and MS Access. The recommended connection methods are SQL Server and Access, and it is not known how much testing has been done using the other connection methods.
 
-**Data**
+Date
+	This folder contains a vague date class (VagueDate) that handles formatting and validation of the database date values to/from a user-friendly 'vague' format.
 
-There are a number of data classes in this folder that support connections between the tool and different relational database systems, including ODBC, Oracle, PostGres, SQL Server and MS Access. The recommended connection methods are SQL Server and Access, and it is not known how much testing has been done using the other connection methods.
+GISApplication
+	This folder contains the central business logic classes, including the main class (GisApp) that is an abstract class for all the core tool functionality.
 
-**Date**
+	This folder contains two sub-folders **MapInfo** and **ArcGIS** that inherit the GisApp abstract class and override it will all the GIS application specific functionality.
 
-This folder contains a vague date class (VagueDate) that handles formatting and validation of the database date values to/from a user-friendly 'vague' format.
+		.. note::
+			The **ArcGIS** sub-folder is only used in the combined ArcGIS/MapInfo variant of the tool.
 
-**GISApplication**
+Icons
+	This folder contains all the icons and button images that appear on the user-interfaces.
 
-This folder contains the central business logic classes, including the main class (GisApp) that is an abstract class for all the core tool functionality.
+UI
+	This folder contains all the user interface related source code in three sub-folders:
 
-This folder contains two sub-folders **MapInfo** and **ArcGIS** that inherit the GisApp abstract class and override it will all the GIS application specific functionality.
-
-	.. note::
-		The **ArcGIS** sub-folder is only used in the combined ArcGIS/MapInfo variant of the tool.
-
-**Icons**
-
-This folder contains all the icons and button images that appear on the user-interfaces.
-
-**UI**
-
-This folder contains all the user interface related source code in three sub-folders:
-
-	* **UserControls** contains bespoke classes used by one or more of the user interfaces.
-	* **View** contains the source code for user interface presentation. The user interfaces were developed using Windows Presentation Framework (WPF) and consists of a main interface (WindowsMain) and nine other sub-interfaces.
-	* **ViewModel** contains the business logic associated with each of the user interfaces.
+		* **UserControls** contains bespoke classes used by one or more of the user interfaces.
+		* **View** contains the source code for user interface presentation. The user interfaces were developed using Windows Presentation Framework (WPF) and consists of a main interface (WindowsMain) and nine other sub-interfaces.
+		* **ViewModel** contains the business logic associated with each of the user interfaces.
 
 
 .. index::
@@ -67,9 +61,11 @@ This folder contains all the user interface related source code in three sub-fol
 HluArcMapExtension
 ------------------
 
-This assembly is an ArcGIS Desktop Extension that provides the interface between the main HLUGISTool assembly and ArcGIS. It consists of a main class **HluArcMapExtension** that performs the editing and geoprocessing commands (e.g. select features, update attributes, split/merge features, zoom to features) requested by the main assembly. It also passes back any information requested by the main assembly (e.g. list valid HLU feature layers, query selected features, is editing active). Commands and requests are passed between the main assembly and this assembly using Named Pipes. See :ref:`named_pipes` for more details.
+This assembly is an ArcGIS Desktop Extension that provides the interface between the main HLUGISTool assembly and ArcGIS. It consists of a main class **HluArcMapExtension** that performs the editing and geoprocessing commands (e.g. select features, update attributes, split/merge features, zoom to features) requested by the main assembly.
 
-This assembly must be registered as an ArcGIS Desktop Extension before it can interface with ArcGIS. See :ref:`esri_registration` for more details.
+This extension also passes back any information requested by the main assembly (e.g. list valid HLU feature layers, query selected features, is editing active). Commands and requests are passed between the main assembly and this assembly using Named Pipes. See :ref:`named_pipes` for more details.
+
+The assembly must be registered as an ArcGIS Desktop Extension before it can interface with ArcGIS. See :ref:`esri_registration` for more details.
 
 
 .. note::
@@ -105,7 +101,7 @@ This assembly contains all the .NET Named Pipes classes used by the HLU Tool. It
 
 Outlined below are the main responsibilities of the classes present in the assembly:
 
-	* **NamedPipeNative** : This utility class exposes kernel32.dll methods for Named Pipes communication. It also defines constants for some of the error codes and method parameter values.
+	* **NamedPipeNative**This utility class exposes kernel32.dll methods for Named Pipes communication. It also defines constants for some of the error codes and method parameter values.
 	* **NamedPipeWrapper** : This class is a wrapper around NamedPipesNative. It uses the exposed kernel32.dll methods to provide controlled Named Pipes functionality.
 	* **APipeConnection** : An abstract class, which defines the methods for creating Named Pipes connections, reading and writing data. This class is inherited by the ClientPipeConnection and ServerPipeConnection classes, used by client and server applications respectively.
 	* **ClientPipeConnection** : Used by client applications to communicate with server ones by using Named Pipes.

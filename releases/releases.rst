@@ -1,5 +1,5 @@
 ********
-Building
+Releases
 ********
 
 
@@ -22,24 +22,22 @@ When building the tool for a new version/release, rather than for just testing o
 Version Numbers
 ---------------
 
-**Assembly version**
-
-The HLUGISTool assembly version, using the format *Major.Minor.Patch.Build*, should be incremented following `semantic versioning <http://semver.org/>`_ rules. So whether the increment relates to a major change, minor update or just a patch will depend on what is contained in the new release.
+Assembly version
+	The HLUGISTool assembly version, using the format *Major.Minor.Patch.Build*, should be incremented following `semantic versioning <http://semver.org/>`_ rules. So whether the increment relates to a major change, minor update or just a patch will depend on what is contained in the new release.
 
 	* Major version numbers change whenever there is significant change to the look or functionality or for large or potentially backward-incompatible changes.
 	* Minor version numbers change when a new minor feature is introduced, or when a set of smaller features are rolled out together.
 	* Patch numbers change when a new build of the software is released containing small bug fixes.
 	* Build numbers typically don't change as a new version is not usually released just for a new build.
 
-.. note::
-	The assembly version number appears in the 'About' pop-up window on user interface.
+	.. note::
+		The assembly version number appears in the 'About' pop-up window on user interface.
 
-**Product Version**
+Product Version
+	The product version in the installer project properties should also be changed to match the assembly version number.
 
-The product version in the installer project properties should also be changed to match the assembly version number.
-
-.. note::
-	The installer product version number is used when installing the tool to ensure an older version of the tool doesn't overwrite a later version. The version number also appears in the Control Panel *Programs and Features* list.
+	.. note::
+		The installer product version number is used when installing the tool to ensure an older version of the tool doesn't overwrite a later version. The version number also appears in the Control Panel *Programs and Features* list.
 
 
 .. index::
@@ -163,7 +161,7 @@ Each new version/variant of the tool should be accompanied by its own set of rel
 	* Fixes
 
 
-Once the new tags for each branch/variant have been pushed to the GitHub repository then release notes can be added. To add release notes go to the list of `tags <https://github.com/HabitatFramework/HLUTool/tags>`_ and click **Add release notes** against the required tag.
+Once the new tags for each branch/variant have been pushed to the GitHub repository then release notes can be added. To add release notes go to the list of `HLUTool Tags <https://github.com/HabitatFramework/HLUTool/tags>`_ and click **Add release notes** against the required tag.
 
 
 .. tip::
@@ -180,6 +178,6 @@ Upload Executables
 
 Finally, once each new release has been created on GitHub the associated installer setup.exe executable can be uploaded. This provides an effective way of distributing the tool and ensures that the installer is stored alongside the relevant release notes and source code for each version/variant.
 
-	.. note::
-		To attach the **setup.exe** installer to a release, edit the release on GitHub and then 'drag and drop' the file on the *Attach binaries by dropping them here* area.
+.. note::
+	To attach the **setup.exe** installer to a release, edit the release on GitHub and then 'drag and drop' the file on the *Attach binaries by dropping them here* area.
 
