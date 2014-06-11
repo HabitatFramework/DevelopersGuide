@@ -9,12 +9,6 @@ HLU Tool - Developer's Guide
 Contents
 --------
 
-.. raw:: latex
-
-	\addcontentsline{toc}{chapter}{\listfigurename}
-	\listoffigures
-	\renewcommand\contentsname{Table of Contents}
-
 .. toctree::
    :maxdepth: 2
    :numbered:
@@ -26,6 +20,7 @@ Contents
    coding/coding
    installer/installer
    building/building
+   registration/registration
    documentation/documentation
    issues/issues
 

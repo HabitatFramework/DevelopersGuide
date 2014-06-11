@@ -40,19 +40,22 @@ The following is a list of applications that you are likely to need as a minimum
 Websites
 ========
 
-The following is a list of websites that you will need to use and become familiar with when developing and supporting the HLU Tool and associated user, technical and developer's guides:
+The following are websites that you will need to use and become familiar with when developing and supporting the HLU Tool and associated user, technical and developer's guides:
 
-	* `GitHub repository <https://github.com/HabitatFramework>`_ : Hosts the source code for the tool and accompanying user and technical guides (including this developer's guide), and is also used as the `issue tracker <https://github.com/HabitatFramework/HLUTool/issues>`_ for any agreed known issues and proposed change requests for the tool.
+`GitHub repository <https://github.com/HabitatFramework>`_
+	Hosts the source code for the tool and accompanying user and technical guides (including this developer's guide), and is also used as the `issue tracker <https://github.com/HabitatFramework/HLUTool/issues>`_ for any agreed known issues and proposed change requests for the tool.
 
 	.. seealso::
 		See :ref:`source_control_github` and :ref:`issue_tracking` for more details.
 
-	* `ReadTheDocs online guides <https://readthedocs.org/>`_ : Creates and hosts the `User Guide <https://readthedocs.org/projects/hlugistool-userguide/>`_, `Technical Guide <https://readthedocs.org/builds/hlutool-technicalguide/>`_ and `Developer's Guide <https://readthedocs.org/projects/hlutool-developersguide/>`_ (this guide) for the tool. See :ref:`documentation_rtd` for more details.
+`ReadTheDocs online guides <https://readthedocs.org/>`_
+	Creates and hosts the `User Guide <https://readthedocs.org/projects/hlugistool-userguide/>`_, `Technical Guide <https://readthedocs.org/builds/hlutool-technicalguide/>`_ and `Developer's Guide <https://readthedocs.org/projects/hlutool-developersguide/>`_ (this guide) for the tool. See :ref:`documentation_rtd` for more details.
 	
 	.. seealso::
 		See :ref:`documentation_rtd` for more details.
 
-	* `ALERC Forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_ : Hosts a discussion forum available to Local Record Centres (LRCs) for the HLU Tool and associated Habitat Framework.
+`ALERC Forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_
+	Hosts a discussion forum available to Local Record Centres (LRCs) for the HLU Tool and associated Habitat Framework.
 	
 	.. seealso::
 		See :ref:`user_forum` for more details.
@@ -72,10 +75,17 @@ Tools & Extensions
 
 The following is a list of free tools and extensions that may be useful when developing and maintaining the tool or the associated user, technical and developer's guides.
 
-	* `Active Python <http://www.activestate.com/activepython>`_ : A cross-platform distribution of Python that provides a one-step installation of all essential Python modules.
-	* `Sphinx <http://sphinx-doc.org/>`_ : A python based documentation generator that can generate HTML, PDF and other output formats.
-	* `Notepad 2-mod <http://xhmikosr.github.io/notepad2-mod/>`_ : A fast and light-weight Notepad-like text editor with syntax highlighting.
-	* `Sublime Text 3 <http://www.sublimetext.com/3>`_ : The latest version of the sophisticated text editor for code and markup languages.
+`Active Python <http://www.activestate.com/activepython>`_
+	A cross-platform distribution of Python that provides a one-step installation of all essential Python modules.
+
+`Sphinx <http://sphinx-doc.org/>`_
+	A python based documentation generator that can generate HTML, PDF and other output formats.
+
+`Notepad 2-mod <http://xhmikosr.github.io/notepad2-mod/>`_
+	A fast and light-weight Notepad-like text editor with syntax highlighting.
+
+`Sublime Text 3 <http://www.sublimetext.com/3>`_
+	The latest version of the sophisticated text editor for code and markup languages.
 
 
 .. index::

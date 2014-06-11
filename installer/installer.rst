@@ -9,10 +9,10 @@ Installer
 
 Since v1.0.1 of the HLU Tool **InstallShield Limited Edition** has been used to build the Windows Installer for deploying the tool on other systems. InstallShield Limited Edition is a free version of *Flexera’s InstallShield* included within Visual Studio 2010 (and later) that replaces the functionality previously provided by the Visual Studio Installer Setup Projects. It contains a wide range of features and options for configuring how a Windows application will be installed, many of which are not needed for installing the tool.
 
-Below is a summary of the InstallShield Limited Edition features and configuration options that are used for creating a Windows installer for the tool. There are no complex settings used to build a Windows installer for the HLU Tool. In fact, the only 'advanced' requirement when installing the ArcGIS/MapInfo variant of the tool is the need to register the *HluArcMapExtension.dll* assembly as an ArcMap Desktop extension. This is not 'directly' achieved by the installer setup.exe application, but instead is achieved 'indirectly' using an *Installer Class* assembly.
+Below is a summary of the InstallShield Limited Edition features and configuration options that are used for creating a Windows installer for the tool. There are no complex settings used to build a Windows installer for the HLU Tool. In fact, the only 'advanced' requirement when installing the ArcGIS/MapInfo variant of the tool is the need to register the *HluArcMapExtension.dll* assembly as an ArcGIS Desktop extension. This is not 'directly' achieved by the installer setup.exe application, but instead is achieved 'indirectly' using an *Installer Class* assembly.
 
-.. seealso::
-	See :doc:`../components/components` for details of the ArcObjectsInstaller component and how the ArcMap Extension is registered when building the tool assemblies in Visual Studio and installing the tool.
+	.. seealso::
+		See :doc:`../registration/registration` for details of how the ArcGIS Extension is registered when building the tool assemblies in Visual Studio and installing the tool.
 
 
 Organize Your Setup
@@ -23,8 +23,8 @@ General Information
 
 This tab contains general information about the tool that appears when viewing the properties of the tool once installed and when viewing the list of installed programs in the control panel.  More importantly it also contains the product version, product code and upgrade code and the destination installation path.
 
-.. seealso::
-	See `building_version_numbers`_ and `building_product_code`_ for more details.
+	.. seealso::
+		See :ref:`building_version_numbers` and :ref:`building_product_code` for more details.
 
 
 Upgrade Paths
@@ -33,7 +33,7 @@ Upgrade Paths
 This tab allows the developer to control which previously installed versions of the tool can be upgraded using this version of the tool. During installation the Windows Installer searches the target system for the specified upgrade code. If found, and the other upgrade properties are met, the target system is upgraded by installing the new version. If the upgrade code is not found on the target system then this version of the tool will be installed as new.
 
 .. seealso::
-	See `building_upgrade_from`_ for more details.
+	See :ref:`building_upgrade_from` for more details.
 
 The *ISPreventDowngrade* is also enabled to prevent the current version of the tool from overwriting later (future) versions of the tool. If users want to install an older version of the tool once a newer version has been installed then the newer version will first need to be manually uninstalled.
 
@@ -62,8 +62,13 @@ Shortcuts/Folders
 
 This tab offers a method of designing shortcuts and program folders for the tool. Currently only two shortcuts are created on the target system's Programs menu:
 
-	* **HLU GIS Tool - Launch** : This shortcut starts the tool without any optional arguments (normal operation)
-	* **HLU GIS Tool - Reconfigure** : This shortcut starts the tool with the optional '/c' argument which triggers the tool to clear any existing configuration settings and re-run the initial configuration steps.
+	* HLU GIS Tool - Launch
+	
+		This shortcut starts the tool without any optional arguments (normal operation)
+	
+	* HLU GIS Tool - Reconfigure
+	
+		This shortcut starts the tool with the optional '/c' argument which triggers the tool to clear any existing configuration settings and re-run the initial configuration steps.
 
 
 Customize the Setup Appearance

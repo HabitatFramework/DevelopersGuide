@@ -2,7 +2,7 @@
 Preface
 *******
 
-The most up to date version of this documentation can be found in **html** and **PDF** form on `ReadTheDocs <https://readthedocs.org/projects/hlutool-developerguide/>`_.
+The most up to date version of this documentation can be found in **html** and **PDF** form on `ReadTheDocs <https://readthedocs.org/projects/hlutool-developersguide/>`_.
 
 What this guide covers
 ======================
@@ -20,6 +20,8 @@ This guide explains a little about how the HLU Tool source code is structured, w
 :doc:`../installer/installer` summarises the features and configuration options that are used for creating an installer for the tool.
 
 :doc:`../building/building` lists the steps to follow when building the tool and distributing a new release.
+
+:doc:`../registration/registration` describes how and why the tool is registered as an ArcGIS extension.
 
 :doc:`../documentation/documentation` gives an overview of the associated online guides and how to maintain them. 
 
@@ -49,11 +51,11 @@ The following are links to some of the websites relevant to the use, support and
 
 * `ALERC Forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_ - Announcements, bug reports, user Q&A and feature discussions.
 * `Releases <https://github.com/HabitatFramework/HLUTool/releases>`_ - Release notes and installers for ArcGIS and MapInfo systems.
-* `Source Code <https://github.com/HabitatFramework>`_ - Repositories for the source code of the tool and online guides.
+* `Source Code <https://github.com/HabitatFramework>`_ - Repositories for the source code of the tool and associated online guides.
 * `Issue Log <https://github.com/HabitatFramework/HLUTool/issues>`_ - Known issues and existing change requests.
 * `User Guide <https://readthedocs.org/projects/hlugistool-userguide/>`_ - Online guide for users of the tool.
-* `Technical Guide <https://readthedocs.org/builds/hlutool-technicalguide/>`_ - Online guide for administrators and technical users.
-* `Developer's Guide <https://readthedocs.org/builds/hlutool-developersguide/>`_ - Online guide for developers (this guide).
+* `Technical Guide <https://readthedocs.org/projects/hlutool-technicalguide/>`_ - Online guide for administrators and technical users.
+* `Developer's Guide <https://readthedocs.org/projects/hlutool-developersguide/>`_ - Online guide for developers (this guide).
 
 
 .. index::

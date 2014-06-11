@@ -4,7 +4,7 @@ Coding Standard
 
 
 .. index::
-	single: Coding Standards; General
+	single: Coding Standards; General Guidelines
 
 .. _coding_general:
 
@@ -13,21 +13,22 @@ General Guidelines
 
 The following are a set of 'basic principles', based on those recommended by `Bugzilla <http://www.bugzilla.org/docs/developer.html>`_, that are also relevant to this Developer's Guide:
 
-	* These guidelines exist in order to **reduce bugs** and make it easier to change things in the future.
-	* Making it easier to change things in the future is important, because an important law of code is: **All Code Will Change**.
-	* Code should be **as simple as possible**. When writing code one of the primary goals should be: **make it easy for other programmers to use and read your code**.
+	* These guidelines exist in order to **reduce bugs** and make it **easier to change** things in the future.
+	* Making it easier to change things is important because an important law of code is: **All Code Will Change**.
+	* Code should be **as simple as possible**. When writing code one of the primary goals should be: 'make it easy for other programmers to use and read your code'.
 	* **Readable** code is more important than **clever** code.
-	* If you're trying to be clever instead of trying to be readable, then maybe you're trying to make things 'faster? But remember: don't solve a problem before you know it exists. If you don't know (by actual, detailed tests) that your code is slow, don't worry about making it faster. This isn't just limited to optimization - many programmers are constantly solving problems that nobody has ever experienced. Don't do that.
+	* If you're trying to be clever instead of trying to be readable, then maybe you're trying to make things 'faster? But remember: don't solve a problem before you know it exists.
+	
+		.. tip::
+			If you don't know (by actual, detailed tests) that your code is slow, don't worry about making it faster. This isn't just limited to optimization - many programmers are constantly solving problems that nobody has ever experienced. Don't do that.
+
 	* You cannot introduce new bugs unless you change code (obviously). This means:
 	
 		* The more **code** you change, the more **bugs** you will create. There are no 'perfect' programmers. Everybody makes a few mistakes now and then.
 		* The number of bugs introduced by a patch is proportional to the size of the patch.
 		* Hence, patches should be as **small** as possible, and should change only what they **need** to change.
 	
-	* An easy way to check if your code is readable, is to ask yourself, 'Will another programmer understand this line instantly when they look at it? If not, that line either needs to be re-written or needs a comment.
-	 
-	 .. seealso::
-		See :ref:`coding_comments` for more guidelines on applying comments.
+	* An easy way to check if your code is readable, is to ask yourself, 'Will another programmer understand this line instantly when they look at it? If not, that line either needs to be re-written or needs a comment. See :ref:`coding_comments` for more guidelines on applying comments.
 
 
 
@@ -35,16 +36,13 @@ The following are a set of 'basic principles', based on those recommended by `Bu
 
 	\newpage
 
-.. index::
-	single: Coding Standards; Comments
-
 .. _coding_comments:
 
 Comments
 ========
 
 .. index::
-	single: Coding Standards; Comments; XML comments
+	single: Coding Standards; XML Comments
 
 .. _xml_comments:
 
@@ -67,7 +65,7 @@ Many of the existing methods and properties in source code are missing XML docum
 
 
 .. index::
-	single: Coding Standards; Comments; General comments
+	single: Coding Standards; General Comments
 
 .. _general_comments:
 
@@ -80,23 +78,24 @@ Although there are almost infinite opportunities to refactor and simplify code t
 
 Here are a few rules of when and why comments should be added include:
 
-	1. Make sure you explain **where** and **why** you have changed the code to help debug newly introduced bugs. See also :ref:`task_list_comments`_.
+	1. Make sure you explain **where** and **why** you have changed the code to help debug potential introduced bugs. See also :ref:`task_list_comments`.
 
-	2. Explain why you chose to do things one way rather than another, especially if the chosen approach is not obvious. For example::
+	2. Explain why you chose to do things one way rather than another, especially if the chosen approach is not obvious. The example below not only names the technique used, but also explains why a simpler approach was not taken::
 
 		/* A binary search turned out to be slower than the Boyer-Moore
 		algorithm for the data sets of interest, thus we have used the more
 		complex, but faster method even though this problem does not at
 		first seem amenable to a string search technique. */
 
-	This comment not only names the technique used, but also explains why a simpler approach was not taken.
+	3. Don't just explain **what** the **code** is doing something but **why** the **program** is doing it. It may be obvious *what* the code is doing, but not *why*.
 
-	3. Explain why the program, not the code, is doing something. It may be obvious *what* the code is doing, but not *why*.
+	4. Explain how any complex sections of code that cannot be refactored or simplified work and why.
 	
-	4. Explain how any complex sections of code that cannot be refactored or simplified work and why. This is especially important for existing code - it is safer to document what the code does (once you've figured it out) than refactor the code and risk introducing an error.
-	
-	5. Any algorithms (calculations, logic flows, etc) used in the program, no matter how simple they may seem when first written, should be explained.
-	
+		.. tip::
+			This is especially important for existing code - it is safer to document what the code does (once you've figured it out) than refactor the code and risk introducing an error.
+
+	5. Any algorithms (calculations, logic flows, etc.) used in the program, no matter how simple they may seem when first written, should be explained.
+
 	6. Finally, keep in mind that what seems obvious now may not seem obvious later.
 
 
@@ -105,14 +104,14 @@ Here are a few rules of when and why comments should be added include:
 
 
 .. index::
-	single: Coding Standards; Comments; Task list comments
+	single: Coding Standards; Comment Tasks
 
 .. _task_list_comments:
 
 Comment tasks
 -------------
 
-Comment tasks have been added at the start of each section of code that relates to a **Known Issue**, **Change Request** or **Fix**. Comment tasks are comments that begin with a comment task token and should be formatted as::
+Comment tasks have been added at the start of each section of code that relates to a *Known Issue*, *Change Request* or *Fix*. Comment tasks are comments that begin with a comment task **token** and should be formatted as::
 
 	// TOKEN: reference (description)
 
@@ -129,7 +128,7 @@ Visual Studio can be configured so that these comments automatically appear in t
 	* **QUERY** : Used to indicate where code (possibly relating to a Known Issue or Change Request) may need to be amended/corrected
 	* **TODO** : Used to indicate where work relating to a change or fix remains outstanding
 
-Where possible top & tail comment lines should be inserted around the 'Task List' comment and related source code to denote where the change/fix/query starts and stops. Additional 'explanatory' comments should also be added to explain what the amended code does, or why it was amended. For example::
+Where possible top & tail comment borders should be inserted around the 'Task List' comment and related source code to denote where the change/fix/query starts and stops. Additional 'explanatory' comments should also be added to explain what the amended code does, or why it was amended. For example::
 
 	//---------------------------------------------------------------------
 	// FIXED: KI96 (BAP Habitats)
@@ -139,5 +138,5 @@ Where possible top & tail comment lines should be inserted around the 'Task List
 	OnPropertyChanged("BapHabitatsAutoEnabled");
 	//---------------------------------------------------------------------
 
-The same Task List comment can be inserted in multiple locations in the source code if more than one section of code relates to the change/fix/query. However, the 'explanatory' comments should be specific to the specifically amended code.
+The same Comment task can be inserted in multiple locations in the source code if more than one section of code relates to the same change/fix/query. However, the 'explanatory' comments should be bespoke for the specifically amended code.
 
