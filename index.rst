@@ -28,7 +28,6 @@ Contents
    building/building
    documentation/documentation
    issues/issues
-   process/process
 
 
 .. only:: html
