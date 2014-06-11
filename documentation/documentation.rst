@@ -12,18 +12,15 @@ Overview
 
 There are three distinct guides that accompany the HLU Tool:
 
-User Guide
-----------
+**User Guide**
 
 The user guide, available to view or download on ReadTheDocs at `HLUTool-UserGuide <https://readthedocs.org/projects/hlugistool-userguide>`_, is for those who will be regular users of the HLU Tool but are not concerned with how to install or configure the tool or how to perform database administration.
 
-Technical Guide
----------------
+**Technical Guide**
 
 The technical guide, available to view or download on ReadTheDocs at `HLUTool-TechnicalGuide <https://readthedocs.org/projects/hlutool-technicalguide>`_, is for those of a more ‘techie’ nature. It contains details of how to install, configure, maintain and upgrade the HLU Tool and use and maintain the associated relational database.
 
-Developer's Guide
------------------
+**Developer's Guide**
 
 The developer's guide (this guide), available to view or download on ReadTheDocs at `HLUTool-DevelopersGuide <https://readthedocs.org/projects/hlutool-developersguide>`_, explains a little about how the HLU Tool source code is structured, what you may need to develop and support the tool and how to build and distribute it.
 

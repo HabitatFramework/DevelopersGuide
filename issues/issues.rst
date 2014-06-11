@@ -20,8 +20,8 @@ The ALERC forum is **not** intended for use during any scheduled development or 
 
 .. _issue_tracking:
 
-GitHub Issue Log
-================
+GitHub Issues Log
+=================
 
 The GitHub `HLUTool issues log <https://github.com/HabitatFramework/HLUTool/issues>`_ is where changes and fixes to the tool should be logged once they have been agreed by the users. When time and funding then allows they can be prioritised and scheduled within an upcoming project. They can then be assigned to a project milestone (and if necessary a specific developer).
 

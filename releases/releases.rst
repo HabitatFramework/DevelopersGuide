@@ -24,22 +24,22 @@ Version Numbers
 
 **Assembly version**
 
-	The HLUGISTool assembly version, using the format *Major.Minor.Patch.Build*, should be incremented following `semantic versioning <http://semver.org/>`_ rules. So whether the increment relates to a major change, minor update or just a patch will depend on what is contained in the new release.
+The HLUGISTool assembly version, using the format *Major.Minor.Patch.Build*, should be incremented following `semantic versioning <http://semver.org/>`_ rules. So whether the increment relates to a major change, minor update or just a patch will depend on what is contained in the new release.
 
 	* Major version numbers change whenever there is significant change to the look or functionality or for large or potentially backward-incompatible changes.
 	* Minor version numbers change when a new minor feature is introduced, or when a set of smaller features are rolled out together.
 	* Patch numbers change when a new build of the software is released containing small bug fixes.
 	* Build numbers typically don't change as a new version is not usually released just for a new build.
 
-	.. note::
-		The assembly version number appears in the 'About' pop-up window on user interface.
+.. note::
+	The assembly version number appears in the 'About' pop-up window on user interface.
 
 **Product version**
 
-	The product version in the installer project properties should also be changed to match the assembly version number.
+The product version in the installer project properties should also be changed to match the assembly version number.
 
-	.. note::
-		The installer product version number is used when installing the tool to ensure an older version of the tool doesn't overwrite a later version. The version number also appears in the Control Panel *Programs and Features* list.
+.. note::
+	The installer product version number is used when installing the tool to ensure an older version of the tool doesn't overwrite a later version. The version number also appears in the Control Panel *Programs and Features* list.
 
 
 .. index::

@@ -52,11 +52,11 @@ Collaborating
 
 Currently there are two owners of the HLUTool repository on GitHub, only one of whom is a developer. There has therefore been no need to fork the repository or raise **Pull** requests. If, in the future, a new developer is to take over development/maintenance of the tool then the simplest solution is for them to also become an *owner* of the repository so that they have control over source. However, if there is a need to have more than one developer then it may be necessary to agree on a collaborative source control process. According to GitHub there are two popular models of collaborative development:
 
-	Fork & Pull
-		The fork & pull model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer (owner). This model reduces the amount of friction for new contributors and is popular with open source projects because it allows people to work independently without upfront coordination.
+Fork & Pull
+	The fork & pull model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer (owner). This model reduces the amount of friction for new contributors and is popular with open source projects because it allows people to work independently without upfront coordination.
 
-	Shared repository model
-		The shared repository model is more prevalent with small teams collaborating on projects. Everyone is granted push access to the central, shared repository and topic branches are used to isolate changes.
+Shared repository model
+	The shared repository model is more prevalent with small teams collaborating on projects. Everyone is granted push access to the central, shared repository and topic branches are used to isolate changes.
 
 Pull requests are especially useful in the fork & pull model because they provide a way to notify project maintainers about changes in your fork. However, they're also useful in the shared repository model where they're used to initiate code review and general discussion about a set of changes before being merged into a mainline branch.
 

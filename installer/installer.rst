@@ -27,19 +27,19 @@ Organize Your Setup
 
 **General Information**
 
-	This tab contains general information about the tool that appears when viewing the properties of the tool once installed and when viewing the list of installed programs in the control panel.  More importantly it also contains the product version, product code and upgrade code and the destination installation path.
+This tab contains general information about the tool that appears when viewing the properties of the tool once installed and when viewing the list of installed programs in the control panel.  More importantly it also contains the product version, product code and upgrade code and the destination installation path.
 
-	.. seealso::
+.. seealso::
 		See :ref:`building_version_numbers` and :ref:`building_product_code` for more details.
 
 **Upgrade Paths**
 
-	This tab allows the developer to control which previously installed versions of the tool can be upgraded using this version of the tool. During installation the Windows Installer searches the target system for the specified upgrade code. If found, and the other upgrade properties are met, the target system is upgraded by installing the new version. If the upgrade code is not found on the target system then this version of the tool will be installed as new.
+This tab allows the developer to control which previously installed versions of the tool can be upgraded using this version of the tool. During installation the Windows Installer searches the target system for the specified upgrade code. If found, and the other upgrade properties are met, the target system is upgraded by installing the new version. If the upgrade code is not found on the target system then this version of the tool will be installed as new.
 
-	.. seealso::
+.. seealso::
 		See :ref:`building_upgrade_from` for more details.
 
-	The **ISPreventDowngrade** has also been enabled to prevent the current version of the tool from overwriting later (future) versions of the tool. If users want to install an older version of the tool once a newer version has been installed then the newer version will first need to be manually uninstalled.
+The **ISPreventDowngrade** has also been enabled to prevent the current version of the tool from overwriting later (future) versions of the tool. If users want to install an older version of the tool once a newer version has been installed then the newer version will first need to be manually uninstalled.
 
 
 Specify Application Data
@@ -47,14 +47,14 @@ Specify Application Data
 
 **Files**
 
-	This tab is used to specify which files are to be included in the install which folders they will be copied to the target system. The files specified include:
+This tab is used to specify which files are to be included in the install which folders they will be copied to the target system. The files specified include:
 
-		* The **primary output** files created during the build process (.dll and .exe files).
-		* Any **.dll** files referenced by the tool and not ordinarily available on a target system.
-		* An **icon** for the tool.
-		* A **ReadMe.txt** file giving an overview of the tool, it's features and where more information can be found.
-		* A **Licence.txt** file containing details of the GNU General Public License under which the tool is released.
-		* An empty MapInfo workspace **Empty.wor** used to open MapInfo when first launching the tool.
+	* The **primary output** files created during the build process (.dll and .exe files).
+	* Any **.dll** files referenced by the tool and not ordinarily available on a target system.
+	* An **icon** for the tool.
+	* A **ReadMe.txt** file giving an overview of the tool, it's features and where more information can be found.
+	* A **Licence.txt** file containing details of the GNU General Public License under which the tool is released.
+	* An empty MapInfo workspace **Empty.wor** used to open MapInfo when first launching the tool.
 
 
 Configure the Target System
@@ -62,13 +62,13 @@ Configure the Target System
 
 **Shortcuts/Folders**
 
-	This tab offers a method of designing shortcuts and program folders for the tool. Currently only two shortcuts are created on the target system's Programs menu:
+This tab offers a method of designing shortcuts and program folders for the tool. Currently only two shortcuts are created on the target system's Programs menu:
 
-		HLU GIS Tool - Launch
-			This shortcut starts the tool without any optional arguments (normal operation)
+	HLU GIS Tool - Launch
+		This shortcut starts the tool without any optional arguments (normal operation)
 	
-		HLU GIS Tool - Reconfigure
-			This shortcut starts the tool with the optional '/c' argument which triggers the tool to clear any existing configuration settings and re-run the initial configuration steps.
+	HLU GIS Tool - Reconfigure
+		This shortcut starts the tool with the optional '/c' argument which triggers the tool to clear any existing configuration settings and re-run the initial configuration steps.
 
 
 Customize the Setup Appearance
@@ -76,7 +76,7 @@ Customize the Setup Appearance
 
 **Dialogs**
 
-	This tab allows the dialog pages of the tool's setup steps to be customised. Developer's can configure various features such as which setup dialogs appear, what images and options appear on the dialogs and if the tool is automatically launched after installation.
+This tab allows the dialog pages of the tool's setup steps to be customised. Developer's can configure various features such as which setup dialogs appear, what images and options appear on the dialogs and if the tool is automatically launched after installation.
 
 
 Define Setup Requirements and Actions
@@ -84,13 +84,13 @@ Define Setup Requirements and Actions
 
 **Requirements**
 
-	This tab is where you can configure software conditions that must be met on a target system in order for the installation setup for the tool to run. Currently there are only two conditions set:
+This tab is where you can configure software conditions that must be met on a target system in order for the installation setup for the tool to run. Currently there are only two conditions set:
 
-		.NET 3.5 SP1 is installed
-			Microsoft .NET Framework 3.5 Service Pack 1 (or later) must be installed on the target system.
+	.NET 3.5 SP1 is installed
+		Microsoft .NET Framework 3.5 Service Pack 1 (or later) must be installed on the target system.
 	
-		REALVERSION
-			A custom condition that ensures that ArcGIS 10.1 or later is installed on the target system by checking the existence of a 'RealVersion' registry value under the registry key 'SOFTWARE\\ESRI\\ArcGIS' in the 'HKLM' registry root. This is a custom condition that was created using the *System Search Wizard*.
+	REALVERSION
+		A custom condition that ensures that ArcGIS 10.1 or later is installed on the target system by checking the existence of a 'RealVersion' registry value under the registry key 'SOFTWARE\\ESRI\\ArcGIS' in the 'HKLM' registry root. This is a custom condition that was created using the *System Search Wizard*.
 
 	.. note::
 		This custom condition is only included in the ArcGIS/MapInfo variant of the tool as a simple mechanism to ensure it is not installed on a MapInfo only target system in error.
