@@ -34,7 +34,8 @@ Version Numbers
 	.. note::
 		The assembly version number appears in the 'About' pop-up window on user interface.
 
-Product version
+**Product version**
+
 	The product version in the installer project properties should also be changed to match the assembly version number.
 
 	.. note::
@@ -78,14 +79,9 @@ ReadMe files
 
 The ReadMe file must be amended to reflect the version number and copyright details of the new release, as well as any new features or changes to system requirements. The ReadMe file is maintained in three different formats; simple text (.txt), rich text (.rtf) and markdown (.md). Each format is used in different circumstances:
 
-	ReadMe.txt
-		Installed with the tool on the target system.
-
-	ReadMe.rtf
-		Displayed during the installation process.
-
-	ReadMe.md
-		Displayed in the source code repository by GitHub.
+	* **ReadMe.txt** - Installed with the tool on the target system.
+	* **ReadMe.rtf** - Displayed during the installation process.
+	* **ReadMe.md** - Displayed in the source code repository by GitHub.
 
 
 .. raw:: latex

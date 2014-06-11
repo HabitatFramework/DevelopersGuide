@@ -1,22 +1,21 @@
-************
-Registration
-************
-
 .. index::
 	single: ArcGIS Registration
 
 .. _esri_registration:
 
-ArcGIS Registration
-===================
+*******************
+ArgGIS Registration
+*******************
 
-Prior to ArcGIS version 10, Component Object Model (COM) components must be registered with the system before they can be used by ArcGIS. This was typically accomplished using Microsoft's supplied utility **RegAsm.exe**. However, starting with ArcGIS version 10 ESRI has moved away from the COM component category approach and there is now a new ESRI registration utility **ESRIRegAsm.exe** which works independently of the system registry; registration of component information for an assembly is now achieved using this new utility.
+Prior to ArcGIS version 10, Component Object Model (COM) components must be registered with the system before they can be used by ArcGIS. This was typically accomplished using Microsoft's supplied utility **RegAsm.exe**.
+
+Starting with ArcGIS version 10, however, ESRI has moved away from the COM component category approach and there is now a new ESRI registration utility **ESRIRegAsm.exe** which works independently of the system registry; registration of component information for an assembly is now achieved using this new utility.
 
 COM components must also be registered in the ESRI component categories appropriate to their intended context and function in order for the ArcGIS applications to make use of their functionality. For example, all ArcMap extensions must be registered in the ESRI **MxExtensions** component category.
 
 
 Registration during build
--------------------------
+=========================
 
 Specifying the 'Register for COM Interop' option on an assembly will trigger Visual Studio to execute **RegAsm.exe** with the */codebase* argument during the *Build* and *Clean* processes to register/unregister the assembly as a COM component in the registry of the development machine. Whenever a component is being registered or unregistered for use from COM, two attribute classes within the .NET Framework, **ComRegisterFunctionAttribute** and **ComUnregisterFunctionAttribute**, allow you to specify user-defined methods that will be called automatically.
 
@@ -83,7 +82,7 @@ These custom calls execute the ESRIRegAsm utility using command line argument '/
 
 
 Registration during installation
---------------------------------
+================================
 
 During the installation of the HLU Tool the HluArcMapExtension assembly must also be registered using the ESRIRegAsm utility and in the *MxExtensions* component category on the target machine. Because the Visual Studio *Build* process is not run registration is achieved in a different way than as described above.
 

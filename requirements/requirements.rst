@@ -43,13 +43,19 @@ Websites
 The following are websites that you will need to use and become familiar with when developing and supporting the HLU Tool and associated user, technical and developer's guides:
 
 `GitHub repository <https://github.com/HabitatFramework>`_
-	Hosts the source code for the tool and accompanying user and technical guides (including this developer's guide), and is also used as the `issue tracker <https://github.com/HabitatFramework/HLUTool/issues>`_ for any agreed known issues and proposed change requests for the tool. See :ref:`source_control_github` and :ref:`issue_tracking` for more details.
+	Hosts the source code for the tool and accompanying user and technical guides (including this developer's guide), and is also used as the `issue tracker <https://github.com/HabitatFramework/HLUTool/issues>`_ for any agreed known issues and proposed change requests for the tool.
+
+	See :ref:`source_control_github` and :ref:`issue_tracking` for more details.
 
 `ReadTheDocs online guides <https://readthedocs.org/>`_
-	Creates and hosts the `User Guide <https://readthedocs.org/projects/hlugistool-userguide/>`_, `Technical Guide <https://readthedocs.org/builds/hlutool-technicalguide/>`_ and `Developer's Guide <https://readthedocs.org/projects/hlutool-developersguide/>`_ (this guide) for the tool. See :ref:`documentation_rtd` for more details.
+	Creates and hosts the `User Guide <https://readthedocs.org/projects/hlugistool-userguide/>`_, `Technical Guide <https://readthedocs.org/builds/hlutool-technicalguide/>`_ and `Developer's Guide <https://readthedocs.org/projects/hlutool-developersguide/>`_ (this guide) for the tool.
+
+	See :ref:`documentation_rtd` for more details.
 
 `ALERC Forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_
-	Hosts a discussion forum available to Local Record Centres (LRCs) for the HLU Tool and associated Habitat Framework. See :ref:`user_forum` for more details.
+	Hosts a discussion forum available to Local Record Centres (LRCs) for the HLU Tool and associated Habitat Framework.
+
+	See :ref:`user_forum` for more details.
 
 
 .. raw:: latex

@@ -1,6 +1,6 @@
-*********
-Installer
-*********
+*****************
+Windows Installer
+*****************
 
 .. index::
 	single: Installer
@@ -13,7 +13,7 @@ InstallShield
 Since v1.0.1 of the HLU Tool **InstallShield Limited Edition** has been used to build the Windows Installer for deploying the tool on other systems. InstallShield Limited Edition is a free version of *Flexera’s InstallShield* included within Visual Studio 2010 (and later) that replaces the functionality previously provided by the Visual Studio Installer Setup Projects. It contains a wide range of features and options for configuring how a Windows application will be installed, many of which are not needed for installing the tool.
 
 .. note::
-	To create a setup.exe file you need to build the HluSetup_ISLE project using the configuration option 'SingleImage'.
+	To create a **setup.exe** file you need to build the HluSetup_ISLE project using the configuration option 'SingleImage'.
 
 
 Below is a summary of the InstallShield Limited Edition features and configuration options that are used for creating a Windows installer for the tool. There are no complex settings used to build a Windows installer for the HLU Tool. In fact, the only 'advanced' requirement when installing the ArcGIS/MapInfo variant of the tool is the need to register the *HluArcMapExtension.dll* assembly as an ArcGIS Desktop extension. This is not 'directly' achieved by the installer setup.exe application, but instead is achieved 'indirectly' using an *Installer Class* assembly.

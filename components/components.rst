@@ -39,8 +39,8 @@ GISApplication
 
 	This folder contains two sub-folders **MapInfo** and **ArcGIS** that inherit the GisApp abstract class and override it will all the GIS application specific functionality.
 
-		.. note::
-			The **ArcGIS** sub-folder is only used in the combined ArcGIS/MapInfo variant of the tool.
+	.. note::
+		The **ArcGIS** sub-folder is only used in the combined ArcGIS/MapInfo variant of the tool.
 
 Icons
 	This folder contains all the icons and button images that appear on the user-interfaces.

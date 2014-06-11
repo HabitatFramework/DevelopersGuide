@@ -1,7 +1,6 @@
-***************
-Coding Standard
-***************
-
+****************
+Coding Standards
+****************
 
 .. index::
 	single: Coding Standards; General Guidelines
