@@ -69,8 +69,8 @@ All of the latest scripts for the database updater can be downloaded from <https
 
 .. _database_updater_new_releases:
 
-Building New Releases
-=====================
+Building Releases
+=================
 
 Building the database updater for a new version/release is more straightforward than building the main tool. The database updater does not need to be installed in order to be executed and hence it does not require an installer. There are just a few steps to consider.
 
@@ -79,8 +79,8 @@ Building the database updater for a new version/release is more straightforward 
 	single: New Releases; Database Updater
 	single: Database Updater; New Releases
 
-Version Numbers
----------------
+Version Number
+--------------
 
 The HLUDbUpdater **assembly version**, using the format *Major.Minor.Patch.Build*, should be incremented following `semantic versioning <http://semver.org/>`_ rules. So whether the increment relates to a major change, minor update or just a patch will depend on what is contained in the new release.
 
@@ -89,10 +89,10 @@ The HLUDbUpdater **assembly version**, using the format *Major.Minor.Patch.Build
 * Patch numbers change when a new build of the software is released containing small bug fixes.
 * Build numbers typically don't change as a new version is not usually released just for a new build.
 
-	.. note::
-		The database updater version number appears in the user interface title bar.
+.. note::
+	The database updater version number appears in the user interface title bar.
 
-ReadMe file
+ReadMe File
 -----------
 
 The **ReadMe.txt** file must be amended to reflect the version number and copyright details of the new release, as well as any new features or changes to system requirements. The ReadMe file is a simple text (.txt) file which is distributed with the database updater executable **HLUDbUpdater.exe**.
@@ -115,17 +115,17 @@ Once the final commit has been applied for a new version then a new tag should b
 **Name**: version number prefixed by 'v' (e.g. 'v1.0.1')
 **Description**: Major/Minor/Patch release version number (e.g. `Minor release v1.0.1`)
 
-	.. note::
-		To create the above tag example enter the following in a Git shell whilst the master branch is active::
+.. note::
+	To create the above tag example enter the following in a Git shell whilst the master branch is active::
 
-			git tag -a v1.0.1 -m ‘Minor release v1.0.1’
+		git tag -a v1.0.1 -m ‘Minor release v1.0.1’
 
 Once the tags have been created in the local repository they should be pushed to the remote GitHub repository.
 
-	.. note::
-		To push new tags to GitHub enter the following in a Git shell window::
+.. note::
+	To push new tags to GitHub enter the following in a Git shell window::
 
-			git push --tags
+		git push --tags
 
 .. note::
 	The database updater **script** branch does not require tags as scripts do not necessarily relate to specific versions of the database updater or the main tool.
@@ -156,8 +156,8 @@ Once the new tag for a release has been pushed to the GitHub repository then rel
 	Existing release for the database updater can be viewed on GitHub under `HLUTool Releases <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater/releases>`_.
 
 
-Upload Executables
-------------------
+Executables
+-----------
 
 Finally, once a new release has been created on GitHub the **HLUDbUpdater.exe** executable and associated files (e.g. ReadMe.txt, Licence.txt and .dlls) can be uploaded. This provides an effective way of distributing the database updater and ensures that it is stored alongside the relevant release notes and source code for each release.
 
@@ -190,28 +190,40 @@ SQL Commands
 Each SQL command must meet the following rules:
 
 * Each SQL command must fit on a single line - multi-line commands will be split at line ends
-* Comments are delimited using the prefix/suffix **/\*** and **\*/** (e.g. '/* Delete the existing exports_fields row. */')
-* String values are delimited by single quotes **''** (e.g. 'INSERT INTO [exports] (export_id, export_name) VALUES (1, \'All attribute fields\')')
-* Database table names are delimited by square brackets **[]** (e.g. 'DELETE * FROM [exports]')
-* **INSERT** commands must explicitly include the **INTO** keyword (e.g. 'INSERT INTO [lut_user] ...')
+* Comments are delimited using the prefix/suffix **/\*** and **\*/**, e.g.
+	
+	/\* Delete the existing exports_fields row. \*/
 
-	.. note::
-		* Single quotes within strings are not currently supported (e.g. 'White's House')
-		* Double quotes within strings are not currently supported (e.g. 'White House "North"')
+* String values are delimited by single quotes **''**, e.g.
+	
+	INSERT INTO [exports] (export_id, export_name) VALUES (1, \'All attribute fields\')
+
+* Database table names are delimited by square brackets **[]**, e.g.
+
+	DELETE * FROM [exports]
+
+* **INSERT** commands must explicitly include the **INTO** keyword, e.g.
+ 
+	INSERT INTO [lut_user] ...
 
 
-Specific Connection Type Directives
------------------------------------
+.. note::
+	* Single quotes within strings are not currently supported (e.g. 'White's House')
+	* Double quotes within strings are not currently supported (e.g. 'White House "North"')
+
+
+Connection Type Directives
+--------------------------
 
 Specific connection types or databases can be targeted by specifying the required connection types/database in a comma-delimited list within square brackets **[]** on a separate line, e.g.
 
-	**[Access,SqlServer,PostGreSql,Oracle]**.
+	[Access,SqlServer,PostGreSql,Oracle]
 
 Connection type directives are required when the structure or keywords of a SQL command are different between connection types or databases - for example *Access* uses the function 'UCASE' to convert strings to upper case whereas *SQLServer*, *Oracle* and *PostgreSQL* use the function 'UPPER'.
 
 Once a connection type directive has been specified in a script **all** subsequent SQL commands in the script will **only** be applied if the **actual** connection type or database established by the user is found in the comma-delimited list **until** either:
 
-	* Another specific connection type directive is encountered
+	* Another specific connection type directive is encountered, or
 	* The connection type is reset using the **[All]** or **[Any]** directive
 
 
@@ -222,21 +234,21 @@ Scripts can contain a number of **special** commands unique to the database upda
 
 **Set Ignore_Errors**
 
-	Set **On** to ignore any errors in subsequent SQL commands (i.e. '**Set Ignore_Errors On**')
-	Set **Off** to immediately stop a script if any errors occur processing subsequent SQL commands (i.e. '**Set Ignore_Errors Off**')
+* Set **On** to ignore any errors in subsequent SQL commands (i.e. '**Set Ignore_Errors On**')
+* Set **Off** to immediately stop a script if any errors occur processing subsequent SQL commands (i.e. '**Set Ignore_Errors Off**')
 
 **Set Timeout**
 
-	To override the default timeout specify the number of seconds before a database timeout will occur when processing a single SQL command (e.g. '**Set timeout 120**')
-	To reset the default timeout specify '**Set timeout default**' or '**Set timeout**'
+* To override the default timeout specify the number of seconds before a database timeout will occur when processing a single SQL command (e.g. '**Set timeout 120**')
+* To reset the default timeout specify '**Set timeout default**' or '**Set timeout**'
 
 **Set Display_Results**
 
-	Set **On** to display the results of any subsequent SQL commands (i.e. '**Set display_results on**')
-	Set **Off** to hide the results of all subsequent SQL commands (i.e. '**Set display_results off**')
+* Set **On** to display the results of any subsequent SQL commands (i.e. '**Set display_results on**')
+* Set **Off** to hide the results of all subsequent SQL commands (i.e. '**Set display_results off**')
 
 **Set Skip_Version_Update**
 
-	Set **On** to skip updating the database version in the **lut_version** table (i.e. '**Set skip_version_update on**')
-	Set **Off** to ensure the database version in the lut_version table is updated (as default) (i.e. '**Set skip_version_update off**')
+* Set **On** to skip updating the database version in the **lut_version** table (i.e. '**Set skip_version_update on**')
+* Set **Off** to ensure the database version in the lut_version table is updated (as default) (i.e. '**Set skip_version_update off**')
 
