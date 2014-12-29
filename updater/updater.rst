@@ -43,24 +43,28 @@ GitHub
 
 Like the main tool the source code for the database updater is open source and hosted by GitHub. It can be downloaded from `HLUDbUpdater repository <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater>`_.
 
-**Branches**
-There are two main `branches <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater/branches>`_ in the repository:
+* **Branches**
 
-	* **master** contains the source code for the database updater
-	* **scripts** contains all of the SQL scripts to be applied by the database updater
+	There are two main `branches <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater/branches>`_ in the repository:
 
-**Tags**
-The source code for every version of the database updater source code from v1.0.0 to v1.0.1 is **Tagged** on GitHub. The `HLUDbUpdater Tags <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater/tags>`_ point to a specific 'commit' in a branch to indicate that the commit relates to a released version of the tool.
+		* **master** contains the source code for the database updater
+		* **scripts** contains all of the SQL scripts to be applied by the database updater
+
+* **Tags**
+
+	The source code for every version of the database updater source code from v1.0.0 to v1.0.1 is **Tagged** on GitHub. The `HLUDbUpdater Tags <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater/tags>`_ point to a specific 'commit' in a branch to indicate that the commit relates to a released version of the tool.
 
 .. _database_updater_releases:
 
-**Releases**
-In addition to the source code **tags** each release of the database updater is also listed under `HLUDbUpdater Releases <https://github.com/HabitatFramework/DatabaseUpdater/releases>`_. Each release relates to one of the above tags but in addition contains a set of **Release Notes** together with a download link to a Zip copy of the source code and the executable **HLUDbUpdater.exe** for that version.
+* **Releases**
+
+	In addition to the source code **tags** each release of the database updater is also listed under `HLUDbUpdater Releases <https://github.com/HabitatFramework/DatabaseUpdater/releases>`_. Each release relates to one of the above tags but in addition contains a set of **Release Notes** together with a download link to a Zip copy of the source code and the executable **HLUDbUpdater.exe** for that version.
 
 .. _database_updater_scripts:
 
-**Scripts**
-All of the latest scripts for the database updater can be downloaded from <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater/archive/scripts.zip>.
+* **Scripts**
+
+	All of the latest scripts for the database updater can be downloaded from <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater/archive/scripts.zip>.
 
 
 .. raw:: latex
@@ -112,8 +116,8 @@ GitHub Tags
 
 Once the final commit has been applied for a new version then a new tag should be created in the local Git repository for the **master** branch. It is common practice to use tag names by prefixing the version number with the letter `v`. The tag descriptions also follow a set pattern by explicitly stating if it is a major, minor or patch release.
 
-**Name**: version number prefixed by 'v' (e.g. 'v1.0.1')
-**Description**: Major/Minor/Patch release version number (e.g. `Minor release v1.0.1`)
+* **Name** : version number prefixed by 'v' (e.g. 'v1.0.1')
+* **Description** : Major/Minor/Patch release version number (e.g. `Minor release v1.0.1`)
 
 .. note::
 	To create the above tag example enter the following in a Git shell whilst the master branch is active::
@@ -128,7 +132,7 @@ Once the tags have been created in the local repository they should be pushed to
 		git push --tags
 
 .. note::
-	The database updater **script** branch does not require tags as scripts do not necessarily relate to specific versions of the database updater or the main tool.
+	The database updater **script** branch does not require tags because scripts do not necessarily relate to specific versions of the database updater or the main tool.
 
 .. tip::
 	Existing tags for the database updater can be viewed on GitHub under `HLUTool Tags <https://github.com/HabitatFramework/HLUTool-DatabaseUpdater/tags>`_.
@@ -234,21 +238,41 @@ Scripts can contain a number of **special** commands unique to the database upda
 
 **Set Ignore_Errors**
 
-* Set **On** to ignore any errors in subsequent SQL commands (i.e. '**Set Ignore_Errors On**')
-* Set **Off** to immediately stop a script if any errors occur processing subsequent SQL commands (i.e. '**Set Ignore_Errors Off**')
+* Set **On** to ignore any errors in subsequent SQL commands, i.e.
+
+	Set Ignore_Errors On
+
+* Set **Off** to immediately stop a script if any errors occur processing subsequent SQL commands, i.e.
+
+	Set Ignore_Errors Off
 
 **Set Timeout**
 
-* To override the default timeout specify the number of seconds before a database timeout will occur when processing a single SQL command (e.g. '**Set timeout 120**')
-* To reset the default timeout specify '**Set timeout default**' or '**Set timeout**'
+* To override the default timeout specify the number of seconds before a database timeout will occur when processing a single SQL command, e.g.
+
+	Set timeout 120
+
+* To reset the default timeout specify:
+
+	Set timeout default *or* Set timeout
 
 **Set Display_Results**
 
-* Set **On** to display the results of any subsequent SQL commands (i.e. '**Set display_results on**')
-* Set **Off** to hide the results of all subsequent SQL commands (i.e. '**Set display_results off**')
+* Set **On** to display the results of any subsequent SQL commands, i.e.
+
+	Set display_results on
+
+* Set **Off** to hide the results of all subsequent SQL commands, i.e.
+
+	Set display_results off
 
 **Set Skip_Version_Update**
 
-* Set **On** to skip updating the database version in the **lut_version** table (i.e. '**Set skip_version_update on**')
-* Set **Off** to ensure the database version in the lut_version table is updated (as default) (i.e. '**Set skip_version_update off**')
+* Set **On** to skip updating the database version in the **lut_version** table, i.e.
+
+	Set skip_version_update on
+
+* Set **Off** to ensure the database version in the lut_version table is updated (as default), i.e.
+
+	Set skip_version_update off
 
