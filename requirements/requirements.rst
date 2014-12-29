@@ -34,10 +34,6 @@ The following is a list of programming concepts, languages, skills & experience 
 	* How online documentation repositories such as `ReadTheDocs <https://readthedocs.org/>`_ work.
 
 
-.. raw:: latex
-
-	\newpage
-
 .. index::
 	single: Requirements; Applications
 
@@ -57,6 +53,11 @@ The following is a list of applications that you are likely to need as a minimum
 	* Git for Windows
 	* GitHub for Windows
 	* InstallShield Limited Edition
+
+
+.. raw:: latex
+
+	\newpage
 
 
 .. index::

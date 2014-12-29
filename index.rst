@@ -20,6 +20,7 @@ Contents
    registration/registration
    documentation/documentation
    issues/issues
+   updater/updater
 
 
 .. only:: html

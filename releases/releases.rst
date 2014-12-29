@@ -2,7 +2,6 @@
 New Releases
 ************
 
-
 .. _new_releases:
 
 Building the Tool
@@ -108,22 +107,22 @@ GitHub Tags
 Once the final commit has been applied for the new version then new tags should be created in the local Git repository for each branch/variant of the tool. It is common practice to use tag names by prefixing the version number with the letter `v`. For the tool tag descriptions also follow a set pattern by explicitly stating if it is a major, minor or patch release.
 
 **ArcGIS/MapInfo variant**
-Name: version number prefixed by 'v' (e.g. 'v1.0.8.0')
-Description: Major/Minor/Patch release version number (e.g. `Minor release v1.0.8.0`)
+Name: version number prefixed by 'v' (e.g. 'v1.0.8')
+Description: Major/Minor/Patch release version number for ArcGIS/MapInfo (e.g. `Minor release v1.0.8 for ArcGIS/MapInfo`)
 
 	.. note::
 		To create the above tag example enter the following in a Git shell whilst the master branch is active::
 
-			git tag -a v1.0.8 -m ‘version 1.0.8’
+			git tag -a v1.0.8 -m ‘Minor release v1.0.8 for ArcGIS/MapInfo’
 
 **MapInfo variant**
-Name: version number prefixed by 'v' and suffixed by 'm' (e.g. 'v1.0.8.0m')
-Description: Major/Minor/Patch release version number for MapInfo only (e.g. `Minor release v1.0.8.0 for MapInfo only`)
+Name: version number prefixed by 'v' and suffixed by 'm' (e.g. 'v1.0.8m')
+Description: Major/Minor/Patch release version number for MapInfo only (e.g. `Minor release v1.0.8 for MapInfo only`)
 
 	.. note::
 		To create the above tag example enter the following in a Git shell window whilst the master-mapinfo branch is active::
 
-			git tag -a v1.0.8m -m ‘version 1.0.8 for Mapinfo only’
+			git tag -a v1.0.8m -m ‘Minor release v1.0.8 for Mapinfo only’
 
 
 Once the tags have been created in the local repository they should be pushed to the remote GitHub repository.
@@ -151,6 +150,7 @@ Each new version/variant of the tool should be accompanied by its own set of rel
 	* Version
 	* Release date
 	* System requirements
+	* Installation Instructions
 	* Additions
 	* Removals
 	* Changes

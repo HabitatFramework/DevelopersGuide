@@ -35,10 +35,10 @@ New commits relating to changes to the tool in the future should similarly provi
 Tags
 ----
 
-The source code for every version of the tool from v1.0.1 to v1.0.8 is **Tagged** on GitHub. The `HLUTool Tags <https://github.com/HabitatFramework/HLUTool/tags>`_ point to a specific 'commit' in a branch to indicate that the commit relates to a released version of the tool.
+The source code for every version of the tool from v1.0.1 to v2.3.0 is **Tagged** on GitHub. The `HLUTool Tags <https://github.com/HabitatFramework/HLUTool/tags>`_ point to a specific 'commit' in a branch to indicate that the commit relates to a released version of the tool.
 
-	* tags **'v1.0.1'** thru **'v1.0.8'** denote versions relating to the ArcGIS/MapInfo variant *master* branch
-	* tags **'v1.0.1m'** thru **'v1.0.8m'** denote versions relating to the MapInfo only variant *master-mapinfo* branch.
+	* tags **'v1.0.1'** thru **'v2.3.0'** denote versions relating to the ArcGIS/MapInfo variant *master* branch
+	* tags **'v1.0.1m'** thru **'v2.3.0m'** denote versions relating to the MapInfo only variant *master-mapinfo* branch.
 
 
 Releases
