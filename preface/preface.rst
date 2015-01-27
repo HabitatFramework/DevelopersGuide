@@ -27,6 +27,8 @@ This guide explains a little about how the HLU Tool source code is structured, w
 
 :doc:`../issues/issues` introduces the online forum and issue log where problems and enhancements can be proposed and discussed.
 
+:doc:`../appendix/appendix` contains a copy of the GNU Free Documentation License v1.3 covering this guide.
+
 
 .. index::
 	single: Licensing
@@ -34,9 +36,11 @@ This guide explains a little about how the HLU Tool source code is structured, w
 Open Source Licensing
 =====================
 
-The code for the HLU Tool is 'open source' and is released under `GPLv3 <http://www.gnu.org/licenses/gpl.html>`_. Users are free to install it on as many computers as they like, and to redistribute it according to the GPLv3 license.
+The code for the HLU Tool is 'open source' and is released under `GNU General Public License (GPL) v3 <http://www.gnu.org/licenses/gpl.html>`_. Users are free to install it on as many computers as they like, and to redistribute it according to the GPLv3 license.
 
-The GPL is designed to guarantee the user's freedom to share and change the software licensed under its terms. When using GPL code no additional restrictions may be applied to resulting product.
+This guide is released under `GNU Free Documentation License (FDL) v1.3 <http://www.gnu.org/licenses/fdl.html>`_. Permission is granted to copy, distribute and/or modify this document under the terms of the license.
+
+These licenses are designed to guarantee the user's freedom to share and change the software and documentation under the terms of the licenses (but note that no additional restrictions may be applied to any new products resulting from changes to the HLU Tool or associated documentation).
 
 Please remember, however, that the tool cost a lot of money to develop and still requires further development and ongoing support. Hence any contributions towards costs would be gratefully received. Enquiries can be made via the `ALERC forum <http://forum.lrcs.org.uk/viewforum.php?id=24>`_.
 
