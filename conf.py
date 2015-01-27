@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'HLU Tool Developer\'s Guide'
+project = u'HLU Tool Developers Guide'
 copyright = u'2011 HBIC, 2013-14 TVERC, 2014-15 SxBRC'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -119,7 +119,7 @@ html_theme = 'default'
 #html_title = None
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'HLU Tool Developer\'s Guide'
+html_short_title = 'HLU Tool Developers Guide'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -202,7 +202,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'HLUGISTool-DevelopersGuide.tex', u'HLU GIS Tool - Developer\`s Guide',
+  ('index', 'HLUGISTool-DevelopersGuide.tex', u'HLU GIS Tool - Developers Guide',
    u'Andy Foy', 'manual'),
 ]
 
@@ -232,7 +232,7 @@ latex_show_urls = False
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'HLUGISTool-DevelopersGuide', u'HLU GIS Tool - Developer\`s Guide',
+    ('index', 'HLUGISTool-DevelopersGuide', u'HLU GIS Tool - Developers Guide',
      [u'Andy Foy'], 1)
 ]
 
@@ -246,8 +246,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'HLUGISTool-DevelopersGuide', u'HLU GIS Tool - Developer\`s Guide',
-   u'Andy Foy', 'HLUGISTool-DevelopersGuide', 'HLU GIS Tool - Developer\`s Guide.',
+  ('index', 'HLUGISTool-DevelopersGuide', u'HLU GIS Tool - Developers Guide',
+   u'Andy Foy', 'HLUGISTool-DevelopersGuide', 'HLU GIS Tool - Developers Guide.',
    'Miscellaneous'),
 ]
 
