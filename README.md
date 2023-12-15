@@ -1,4 +1,4 @@
-DevelopersGuide
+Developer Guide
 ===============
 
-Developers Guide for the HLU GIS Tool.
+Developer Guide for the HLU Tool.
